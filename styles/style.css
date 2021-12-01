@@ -1,0 +1,51 @@
+p {
+    background-color: rgba(55, 55, 55, 0.1);
+}
+
+.important {
+    color: red;
+}
+
+.my-font-color-red {
+    color: red;
+}
+
+.bg-my-primary {
+    background-color: #54a3d8;
+}
+
+.bg-my-bisque {
+    background-color: bisque;
+}
+
+.bg-my-lightskyblue {
+    background-color: lightskyblue;
+}
+
+.bg-my-lightsteelblue {
+    background-color: lightsteelblue;
+}
+
+.bg-my-darkcyan {
+    background-color: darkcyan;
+}
+
+.bg-my-lavender {
+    background-color: lavender;
+}
+
+.bg-my-lightpink {
+    background-color: #FFD4D4;
+}
+
+.bg-my-PaleTurquoise {
+    background-color: PaleTurquoise;
+}
+
+.bg-my-gray {
+    background-color: rgba(45, 45, 45, 0.1);
+}
+
+.bg-my-darkgray {
+    background-color: rgba(55, 55, 55, 0.1);
+}
