@@ -1,0 +1,9 @@
+1. Prerequisite: IKVM.7.2.4630.5 installed.
+
+2. Download FOP 2.6 from http://xmlgraphics.apache.org/fop/1.0/index.html#download
+3. Copy all JAR files to C:\Fop\Build\
+4. Open a command prompt and run the following: ikvmc -target:library -reference:IKVM.OpenJDK.Core.dll -recurse:C:\Fop\Build\\*.jar -version:2.6.0 -out:C:\Fop\fop.dll
+5. In your Visual Studio project, add references to fop.dll, IKVM.OpenJDK.*.dll and IKVM.Runtime.dll
+
+
+ikvmc -target:library -reference:IKVM.OpenJDK.Core.dll -lib:C:\IKVM\ikvm-7.2.4630.5\bin -recurse:.\build\fop.jar .\lib\*.jar -version:2.6.0 -out:.\fop.dll

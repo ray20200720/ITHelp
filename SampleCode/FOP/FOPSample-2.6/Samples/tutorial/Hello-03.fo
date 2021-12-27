@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format">
+
+<fo:layout-master-set>
+<fo:simple-page-master master-name="A4">
+<!-- Page template goes here -->
+<fo:region-body/>
+</fo:simple-page-master>
+</fo:layout-master-set>
+
+<fo:page-sequence master-reference="A4">
+<!-- Page content goes here -->
+<fo:flow flow-name="xsl-region-body">
+<fo:block font-size="14pt" font-family="verdana" color="red"
+space-before="5mm" space-after="5mm">
+Just For Fun
+</fo:block>
+<fo:block text-indent="5mm" font-family="verdana" font-size="12pt">
+You can find some useful information in ITHelp
+</fo:block>
+</fo:flow>
+</fo:page-sequence>
+
+</fo:root>

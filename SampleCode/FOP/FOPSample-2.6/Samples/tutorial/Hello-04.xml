@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<doc>
+    <head>
+        <title>Sample</title>
+    </head>
+    <body>
+        <p>Hello World!</p>
+        <p>This is the first<b>SampleDoc</b>
+        </p>
+    </body>
+</doc>
