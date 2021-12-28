@@ -8,13 +8,14 @@ AUTHORS: Ray Kuo
 * [第 01 天：產生PDF](tutorial\01.md)
 * [第 02 天：指定字體大小](tutorial\02.md)
 * [第 03 天：指定字體顏色](tutorial\03.md)
-* [第 04 天：使用xml和xsl產生fo及pdf](tutorial\04.md)
-* [第 05 天：使用Java產生pdf](tutorial\05.md)
-* [第 06 天：使用Java產生fo及pdf](tutorial\06.md)
-* [第 07 天：使用C#產生pdf](tutorial\07.md)
-* [第 08 天：使用C#產生fo及pdf](tutorial\08.md)
-* [第 09 天：在ASP.NET Web網頁產生pdf](tutorial\09.md)
-
+* [第 04 天：指定字形和顏色](tutorial\04.md)
+* [第 05 天：修改字形為斜體和粗體](tutorial\05.md)
+* [第 06 天：使用xml和xsl產生fo及pdf](tutorial\06.md)
+* [第 07 天：使用Java產生pdf](tutorial\07.md)
+* [第 08 天：使用Java產生fo及pdf](tutorial\08.md)
+* [第 09 天：使用C#產生pdf](tutorial\09.md)
+* [第 10 天：使用C#產生fo及pdf](tutorial\10.md)
+* [第 11 天：在ASP.NET Web網頁產生pdf](tutorial\11.md)
 
 準備工作
 -------
