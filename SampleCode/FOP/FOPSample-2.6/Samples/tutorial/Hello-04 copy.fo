@@ -12,7 +12,13 @@
 <fo:page-sequence master-reference="A4">
 <!-- Page content goes here -->
 <fo:flow flow-name="xsl-region-body">
-<fo:block font-size="20pt" color="red">Hello World</fo:block>
+<fo:block font-size="14pt" font-family="verdana" color="red"
+space-before="5mm" space-after="5mm">
+Just For Fun
+</fo:block>
+<fo:block text-indent="5mm" font-family="verdana" font-size="12pt">
+You can find some useful information in ITHelp
+</fo:block>
 </fo:flow>
 </fo:page-sequence>
 

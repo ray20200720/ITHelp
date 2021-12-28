@@ -12,7 +12,9 @@
 <fo:page-sequence master-reference="A4">
 <!-- Page content goes here -->
 <fo:flow flow-name="xsl-region-body">
-<fo:block font-size="20pt" color="red">Hello World</fo:block>
+<fo:block font-size="20pt" color="red" font-family="Arial">Hello World</fo:block>
+<fo:block font-size="20pt" color="red" font-family="Arial" font-weight="bold">Hello World</fo:block>
+<fo:block font-size="20pt" color="red" font-family="Arial" font-weight="bold" font-style="italic">Hello World</fo:block>
 </fo:flow>
 </fo:page-sequence>
 
