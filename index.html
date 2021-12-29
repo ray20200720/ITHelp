@@ -59,6 +59,42 @@
     <div class="container" style="margin-top:30px">
         <div class="row">
             <div class="col-sm-12">
+                <h5>[Barcode]</h5>
+                <h4>UPC-A條碼開頭4條線還是2條線? 一樣不一樣?</h4>
+                <p>
+                    客戶反應我們列印出來的UPC-A格式不一樣(如下圖一).
+                </p>
+
+                <img src="pictures\UPC-A-01-small.png" alt="UPC-A-01">
+                <p>
+                    客戶列出差異如下圖二
+                </p>                
+                <img src="pictures\UPC-A-02-small.png" alt="UPC-A-01">
+                <p>
+                    上網查了很多資料,只有解釋UPC-A的格式,但都沒提到為什麼有的條碼是4條線開頭,有的條碼是2條線開頭,究竟有什麼差異呢?<br>
+                    我用BarTender產生一個UPC-A條碼,和客戶提供的條碼格式完全一致.我猜想,BarTender應該會有設定是2條線開頭的功能?<br>
+                    我在點擊滑鼠右鍵: 屬性->可讀性->分割UPC數字 
+                </p>
+                <img src="pictures\BarTender-SplitDigit-small.png" alt="">
+                <p>
+                    經過取消勾選之後,條碼變成下面這樣
+                </p>
+                <img src="pictures\BarTender-SplitDigit-Unselected-small.png" alt="">
+                <p>
+                    數字前面一樣是2條線,但數字是內縮的,很像但感覺又有一點不一樣.<br>
+                    我拿手機QRCode去掃描,讀出來的數字完全一樣.<br>
+                    接著我就認真的把兩張圖複製到小畫家上,排在一起比對.<br>
+                    接著發生一件讓我很驚訝的事情,<span style="color: red;">兩張的條碼是完全一樣的</span>.<br>
+                    我才恍然大悟,原來客戶和我們公司的標籤只是數字位置不同,導致產生格式不一致的錯覺.<br>
+                    如果就條碼來看是完全一致的,如果就數字來看,也是完全一致.<span style="color: red;">這兩張條碼根本就是一樣的.</span><br>
+                    我重新標示如下,你就能看出兩張條碼根本就是一樣的<br>
+                </p>
+
+                <img src="pictures\UPC-A-final.png" alt="">
+                <hr>
+
+                <!-- ---------------------------------------------------------------------------- -->
+
                 <h5>[ASP.NET]</h5>
                 <h4>使用 acsx 與 aspx - WebUserControl</h4>
                 <p class="bg-my-darkgray">
