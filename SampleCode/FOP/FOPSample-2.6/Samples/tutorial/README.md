@@ -10,12 +10,13 @@ AUTHORS: Ray Kuo
 * [第 03 天：指定字體顏色](03.md)
 * [第 04 天：指定字形和顏色](04.md)
 * [第 05 天：修改字形為斜體和粗體](05.md)
-* [第 06 天：使用xml和xsl產生fo及pdf](06.md)
-* [第 07 天：使用Java產生pdf](07.md)
-* [第 08 天：使用Java產生fo及pdf](08.md)
-* [第 09 天：使用C#產生pdf](09.md)
-* [第 10 天：使用C#產生fo及pdf](10.md)
-* [第 11 天：在ASP.NET Web網頁產生pdf](11.md)
+* [第 06 天：Base-14 Fonts](06.md)
+* [第 07 天：使用xml和xsl產生fo及pdf](07.md)
+* [第 08 天：使用Java產生pdf](08.md)
+* [第 09 天：使用Java產生fo及pdf](09.md)
+* [第 10 天：使用C#產生pdf](10.md)
+* [第 11 天：使用C#產生fo及pdf](11.md)
+* [第 12 天：在ASP.NET Web網頁產生pdf](12.md)
 
 準備工作
 -------
