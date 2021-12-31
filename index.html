@@ -18,17 +18,22 @@
         height: 200px;
         background: #aaa;
     }
+    .jumbotron{
+        padding-top: 1em; 
+        padding-bottom: 1em; 
+    }
+       
     </style>
 </head>
 <body>
-    <div class="jumbotron text-center" style="margin-bottom:0">
-        <h1>ITHelp</h1>
-        The information that might help you.
+    <!-- <div class="jumbotron text-center" style="margin-bottom:0"> -->
+        <!-- <h1>ITHelp</h1> -->
+        <!-- The information that might help you. -->
         <!-- <p>The information that might help you.</p> -->
-    </div>
+    <!-- </div> -->
 
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-        <a class="navbar-brand" href="#">Home</a>
+        <a class="navbar-brand" href="#">ITHelp</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -82,7 +87,7 @@
                 <!-- ---------------------------------------------------------------------------- -->
 
                 <h5>[git]</h5>
-                <h4>如何將程式碼恢復成原來的</h4>
+                <h4>如何將程式碼恢復成原來的(類似svn的revert功能)</h4>
                 <p class="bg-my-darkgray">
                     git restore xxx檔名
                 </p>
@@ -97,21 +102,21 @@
                     客戶反應我們列印出來的UPC-A格式不一樣(如下圖一).
                 </p>
 
-                <img src="pictures\UPC-A-01-small.png" alt="UPC-A-01">
+                <img src="pictures\barcode\UPC-A-01-small.png" alt="UPC-A-01">
                 <p>
                     客戶列出差異如下圖二
                 </p>                
-                <img src="pictures\UPC-A-02-small.png" alt="UPC-A-01">
+                <img src="pictures\barcode\UPC-A-02-small.png" alt="UPC-A-01">
                 <p>
                     上網查了很多資料,只有解釋UPC-A的格式,但都沒提到為什麼有的條碼是4條線開頭,有的條碼是2條線開頭,究竟有什麼差異呢?<br>
                     我用BarTender產生一個UPC-A條碼,和客戶提供的條碼格式完全一致.我猜想,BarTender應該會有設定是2條線開頭的功能?<br>
                     我在點擊滑鼠右鍵: 屬性->可讀性->分割UPC數字 
                 </p>
-                <img src="pictures\BarTender-SplitDigit-small.png" alt="">
+                <img src="pictures\barcode\BarTender-SplitDigit-small.png" alt="">
                 <p>
                     經過取消勾選之後,條碼變成下面這樣
                 </p>
-                <img src="pictures\BarTender-SplitDigit-Unselected-small.png" alt="">
+                <img src="pictures\barcode\BarTender-SplitDigit-Unselected-small.png" alt="">
                 <p>
                     數字前面一樣是2條線,但數字是內縮的,很像但感覺又有一點不一樣.<br>
                     我拿手機QRCode去掃描,讀出來的數字完全一樣.<br>
@@ -122,7 +127,7 @@
                     我重新標示如下,你就能看出兩張條碼根本就是一樣的<br>
                 </p>
 
-                <img src="pictures\UPC-A-final.png" alt="">
+                <img src="pictures\barcode\UPC-A-final.png" alt="">
                 <hr>
 
                 <!-- ---------------------------------------------------------------------------- -->
