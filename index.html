@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <title>ITHelp</title>
     <!-- Required meta tags -->
@@ -14,22 +15,42 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <title>ITHelp</title>
     <style>
-    .fakeimg {
-        height: 200px;
-        background: #aaa;
-    }
-    .jumbotron{
-        padding-top: 1em; 
-        padding-bottom: 1em; 
-    }
-       
+        .fakeimg {
+            height: 200px;
+            background: #aaa;
+        }
+
+        .jumbotron {
+            padding-top: 1em;
+            padding-bottom: 1em;
+        }
+
+        .code {
+            background-color: black;
+            color: white;
+            padding-top: 0.5em;
+            padding-bottom: 0.5em;
+            padding-left: 0.1em;
+        }
+
+        .title {
+            text-decoration: underline;
+        }
+
+        p {
+            padding-top: 0.5em;
+            padding-bottom: 0.5em;
+            padding-left: 0.5em;
+            background: #aaa;
+        }
     </style>
 </head>
+
 <body>
     <!-- <div class="jumbotron text-center" style="margin-bottom:0"> -->
-        <!-- <h1>ITHelp</h1> -->
-        <!-- The information that might help you. -->
-        <!-- <p>The information that might help you.</p> -->
+    <!-- <h1>ITHelp</h1> -->
+    <!-- The information that might help you. -->
+    <!-- <p>The information that might help you.</p> -->
     <!-- </div> -->
 
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
@@ -65,30 +86,77 @@
         <div class="row">
             <div class="col-sm-12">
 
+                <h5>[git bash]</h5>
+                <h4 class="title">解決git bash下的vim螢幕會閃一下(例如:按ESC時)</h4>
+                <p>
+                    在vim輸入:set novisualbell
+                </p>
+                <div class="code">&nbsp;&nbsp;:set novisualbell</div>
+                <br>
+                <p>
+                    或者修改.vimrc,加上set novisualbell
+                </p>
+                <div class="code">&nbsp;&nbsp;set novisualbell</div>
+                <br>
+                <a href="https://vim.fandom.com/wiki/Disable_beeping" class="btn btn-secondary btn-sm"
+                    target="_blank">參考資料</a>
+                <hr>
+                <!-- ---------------------------------------------------------------------------- -->
+
+                <h5>[git bash]</h5>
+                <h4 class="title">windows terminal + git bash 使用 del鍵 畫面會閃爍</h4>
+                <p>
+                    修改~/.inputrc
+                    加上set bell-style none
+                    重啟Windows Terminal
+                </p>
+                <div class="code">&nbsp;&nbsp;set bell-style nonel</div>
+                <br>
+                <a href="https://github.com/microsoft/terminal/issues/7200#issuecomment-672786518"
+                    class="btn btn-secondary btn-sm" target="_blank">參考資料</a>
+                <hr>
+                <!-- ---------------------------------------------------------------------------- -->
+
+                <h5>[git bash]</h5>
+                <h4 class="title">git diff差異如何以左右方式顯示</h4>
+                <p>
+                    使用git diff指令比較檔案差異呈現的結果是上下顯示,如何以左右方式顯示?<br>
+                    有一種方式是透過指定difftool指定為vimdiff
+                </p>
+                <div class="code">&nbsp;&nbsp;$ git difftool --tool=vimdiff</div>
+                <br>
+                <a href="https://stackoverflow.com/questions/7669963/how-can-i-get-a-side-by-side-diff-when-i-do-git-diff"
+                    class="btn btn-secondary btn-sm" target="_blank">參考資料</a>
+                <hr>
+                <!-- ---------------------------------------------------------------------------- -->
+
                 <h5>[HTML]</h5>
-                <h4>How to change the default value for select element and checkbox in HTML</h4>
+                <h4 class="title">How to change the default value for select element and checkbox in HTML</h4>
                 <select name="" id="">
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3" selected>3</option>
                 </select>
-                <input type="checkbox" checked> 
-                <p></p>
-                <p class="bg-my-darkgray">
-                    select option use <span><strong class="important">selected</strong></span> like below:<br>
-                     &lt;option value="3" selected&gt;<br><br>
-                    checkbox use <span><strong class="important">checked</strong></span> like below:<br>
-                    &lt;input type="checkbox" checked&gt;
-                </p>
-                <a href="https://stackoverflow.com/questions/3518002/how-can-i-set-the-default-value-for-an-html-select-element" class="btn btn-secondary btn-sm" target="_blank">參考資料1</a>
-                <a href="https://stackoverflow.com/questions/47743629/input-checkbox-checked-by-default" class="btn btn-secondary btn-sm" target="_blank">參考資料2</a>
+                <input type="checkbox" checked>
+                <br>
+                <div>
+                    select option use <span><strong class="important">selected</strong></span> like below:
+                </div>
+                <div class="code">&nbsp;&nbsp;&lt;option value="3" selected&gt;</div>
+                checkbox use <span><strong class="important">checked</strong></span> like below:
+                <div class="code">&nbsp;&nbsp;&lt;input type="checkbox" checked&gt;</div>
+                <br>
+                <a href="https://stackoverflow.com/questions/3518002/how-can-i-set-the-default-value-for-an-html-select-element"
+                    class="btn btn-secondary btn-sm" target="_blank">參考資料1</a>
+                <a href="https://stackoverflow.com/questions/47743629/input-checkbox-checked-by-default"
+                    class="btn btn-secondary btn-sm" target="_blank">參考資料2</a>
                 <hr>
 
                 <!-- ---------------------------------------------------------------------------- -->
 
                 <h5>[git]</h5>
-                <h4>如何將程式碼恢復成原來的(類似svn的revert功能)</h4>
-                <p class="bg-my-darkgray">
+                <h4 class="title">如何將程式碼恢復成原來的(類似svn的revert功能)</h4>
+                <p>
                     git restore xxx檔名
                 </p>
                 <img src="pictures\git\git-restore-06-small.png" alt="">
@@ -97,7 +165,7 @@
                 <!-- ---------------------------------------------------------------------------- -->
 
                 <h5>[Barcode]</h5>
-                <h4>UPC-A條碼開頭4條線還是2條線? 一樣不一樣?</h4>
+                <h4 class="title">UPC-A條碼開頭4條線還是2條線? 一樣不一樣?</h4>
                 <p>
                     客戶反應我們列印出來的UPC-A格式不一樣(如下圖一).
                 </p>
@@ -105,12 +173,12 @@
                 <img src="pictures\barcode\UPC-A-01-small.png" alt="UPC-A-01">
                 <p>
                     客戶列出差異如下圖二
-                </p>                
+                </p>
                 <img src="pictures\barcode\UPC-A-02-small.png" alt="UPC-A-01">
                 <p>
                     上網查了很多資料,只有解釋UPC-A的格式,但都沒提到為什麼有的條碼是4條線開頭,有的條碼是2條線開頭,究竟有什麼差異呢?<br>
                     我用BarTender產生一個UPC-A條碼,和客戶提供的條碼格式完全一致.我猜想,BarTender應該會有設定是2條線開頭的功能?<br>
-                    我在點擊滑鼠右鍵: 屬性->可讀性->分割UPC數字 
+                    我在點擊滑鼠右鍵: 屬性->可讀性->分割UPC數字
                 </p>
                 <img src="pictures\barcode\BarTender-SplitDigit-small.png" alt="">
                 <p>
@@ -133,48 +201,52 @@
                 <!-- ---------------------------------------------------------------------------- -->
 
                 <h5>[ASP.NET]</h5>
-                <h4>使用 acsx 與 aspx - WebUserControl</h4>
-                <p class="bg-my-darkgray">
+                <h4 class="title">使用 acsx 與 aspx - WebUserControl</h4>
+                <p>
                     把元件放在 ascx 上，然後在 aspx 裡使用
                 </p>
-                <a href="https://blog.xuite.net/tolarku/blog/48519600-%5BASP.NET%5D+%E4%BD%BF%E7%94%A8+acsx+%E8%88%87+aspx+-+WebUserControl" class="btn btn-secondary btn-sm" target="_blank">參考資料</a>
+                <a href="https://blog.xuite.net/tolarku/blog/48519600-%5BASP.NET%5D+%E4%BD%BF%E7%94%A8+acsx+%E8%88%87+aspx+-+WebUserControl"
+                    class="btn btn-secondary btn-sm" target="_blank">參考資料</a>
                 <hr>
 
                 <!-- ---------------------------------------------------------------------------- -->
 
 
                 <h5>[HTML]</h5>
-                <h4>How to display &amp;nbsp; in HTML</h4>
-                <p class="bg-my-darkgray">
+                <h4 class="title">How to display &amp;nbsp; in HTML</h4>
+                <p>
                     use <span><strong class="important">&amp;amp;</strong></span>
                 </p>
-                <a href="https://github.com/Winmay/Winmay.github.io/blob/master/_posts/2017-06-15-markdown%E5%A6%82%E4%BD%95%E6%98%BE%E7%A4%BAHtml%E7%89%B9%E6%AE%8A%E7%AC%A6%E5%8F%B7.md" class="btn btn-secondary btn-sm" target="_blank">參考資料</a>
+                <a href="https://github.com/Winmay/Winmay.github.io/blob/master/_posts/2017-06-15-markdown%E5%A6%82%E4%BD%95%E6%98%BE%E7%A4%BAHtml%E7%89%B9%E6%AE%8A%E7%AC%A6%E5%8F%B7.md"
+                    class="btn btn-secondary btn-sm" target="_blank">參考資料</a>
                 <hr>
 
                 <!-- ---------------------------------------------------------------------------- -->
                 <h5>[HTML]</h5>
-                <h4>How to add space in HTML</h4>
-                <p class="bg-my-darkgray">
+                <h4 class="title">How to add space in HTML</h4>
+                <p>
                     use <span><strong class="important">&amp;nbsp;</strong></span>
                 </p>
-                <a href="https://github.com/Winmay/Winmay.github.io/blob/master/_posts/2017-06-15-markdown%E5%A6%82%E4%BD%95%E6%98%BE%E7%A4%BAHtml%E7%89%B9%E6%AE%8A%E7%AC%A6%E5%8F%B7.md" class="btn btn-secondary btn-sm" target="_blank">繼續閱讀</a>
+                <a href="https://github.com/Winmay/Winmay.github.io/blob/master/_posts/2017-06-15-markdown%E5%A6%82%E4%BD%95%E6%98%BE%E7%A4%BAHtml%E7%89%B9%E6%AE%8A%E7%AC%A6%E5%8F%B7.md"
+                    class="btn btn-secondary btn-sm" target="_blank">繼續閱讀</a>
                 <hr>
 
                 <!-- ---------------------------------------------------------------------------- -->
 
                 <h5>[HTML]</h5>
-                <h4>How to display HTML tags as plain text</h4>
-                <p class="bg-my-darkgray">
-                    <span><strong class="important">Replace < with &lt; and > with &gt;</strong></span>
+                <h4 class="title">How to display HTML tags as plain text</h4>
+                <p>
+                    <span><strong class="important">Replace < with &lt; and> with &gt;</strong></span>
                 </p>
-                <a href="https://stackoverflow.com/questions/6817262/how-to-display-html-tags-as-plain-text" class="btn btn-secondary btn-sm" target="_blank">繼續閱讀</a>
+                <a href="https://stackoverflow.com/questions/6817262/how-to-display-html-tags-as-plain-text"
+                    class="btn btn-secondary btn-sm" target="_blank">繼續閱讀</a>
                 <hr>
 
                 <!-- ---------------------------------------------------------------------------- -->
 
                 <h5>[HTML]</h5>
-                <h4>a href如何開啟新頁</h4>
-                <p class="bg-my-darkgray">
+                <h4 class="title">a href如何開啟新頁</h4>
+                <p>
                     加上<span><strong class="important"> target="_blank"</strong></span>
                 </p>
                 <a href="#" class="btn btn-secondary btn-sm">繼續閱讀</a>
@@ -183,9 +255,11 @@
                 <!-- ---------------------------------------------------------------------------- -->
 
                 <h5>[Windows]</h5>
-                <h4>檔名NUL無法刪除</h4>
-                <p class="bg-my-darkgray">
-                    參考 <a href="https://stackoverflow.com/questions/17883481/delete-a-file-named-nul-on-windows" target="_blank">https://stackoverflow.com/questions/17883481/delete-a-file-named-nul-on-windows</a> <br>
+                <h4 class="title">檔名NUL無法刪除</h4>
+                <p>
+                    參考 <a href="https://stackoverflow.com/questions/17883481/delete-a-file-named-nul-on-windows"
+                        target="_blank">https://stackoverflow.com/questions/17883481/delete-a-file-named-nul-on-windows</a>
+                    <br>
 
                 </p>
                 用下列命令
@@ -198,21 +272,24 @@
                 <!-- ---------------------------------------------------------------------------- -->
 
                 <h5>[ASP.NET]</h5>
-                <h4>Windows Form UI凍結沒反應</h4>
-                <p class="bg-my-darkgray">
-                    參考 <a href="https://blog.darkthread.net/Files/DKTD-WinFormThreading.pdf" target="_blank">https://blog.darkthread.net/Files/DKTD-WinFormThreading.pdf</a>
+                <h4 class="title">Windows Form UI凍結沒反應</h4>
+                <p>
+                    參考 <a href="https://blog.darkthread.net/Files/DKTD-WinFormThreading.pdf"
+                        target="_blank">https://blog.darkthread.net/Files/DKTD-WinFormThreading.pdf</a>
                 </p>
                 <hr>
 
                 <!-- ---------------------------------------------------------------------------- -->
 
                 <h5>[ASP.NET]</h5>
-                <h4>如何將專案Visual Studio 2008升級至Visual Studio 2015?</h4>
-                <p class="bg-my-darkgray">
+                <h4 class="title">如何將專案Visual Studio 2008升級至Visual Studio 2015?</h4>
+                <p>
                     <span class="important"><strong>1.複製xxx.sln,並將原xxx.sln改名為xxx2008.sln</strong></span><br>
                     <span class="important"><strong>2.修改xxx.sln</strong></span><br>
-                    將<strong>Visual Studio Solution File, Format Version <span class="my-font-color-red">10.00</span></strong> 改為
-                    <strong>Visual Studio Solution File, Format Version <span class="my-font-color-red">11.00</span></strong><br>
+                    將<strong>Visual Studio Solution File, Format Version <span
+                            class="my-font-color-red">10.00</span></strong> 改為
+                    <strong>Visual Studio Solution File, Format Version <span
+                            class="my-font-color-red">11.00</span></strong><br>
                     <span class="important"><strong>3.修改xxx.csproj</strong></span><br>
                     將<strong>ToolsVersion="<span class="my-font-color-red">3.5</span>"</strong> 改為
                     <strong>ToolsVersion="<span class="my-font-color-red">4.0</span>"</strong>
@@ -222,7 +299,7 @@
                 <!-- ---------------------------------------------------------------------------- -->
 
                 <h5>[Visual Studio Code]</h5>
-                <h4>如何在Visual Studio Code自動排版CSS?</h4>
+                <h4 class="title">如何在Visual Studio Code自動排版CSS?</h4>
                 <p>
                     <strong>安裝CSS Formatter插件: </strong><br>
                     View -> Extension -> CSS Formatter -> Install<br>
@@ -234,7 +311,7 @@
                 <!-- ---------------------------------------------------------------------------- -->
 
                 <h5>[Visual Studio Code]</h5>
-                <h4 >如何在Visual Studio Code預覽HTML?</h4>
+                <h4 class="title">如何在Visual Studio Code預覽HTML?</h4>
                 <p>
                     <strong>安裝HTML Preview插件:</strong> <br>
                     View -> Extension -> HTML Preview -> Install
@@ -244,7 +321,7 @@
                 <!-- ---------------------------------------------------------------------------- -->
 
                 <h5>[Visual Studio 2015]</h5>
-                <h4>如何在Visual Studio內使if else等程式碼摺疊?</h4>
+                <h4 class="title">如何在Visual Studio內使if else等程式碼摺疊?</h4>
                 <p>
                     <strong>安裝Outline插件:</strong><br>
                     Tools -> Extensions and Updates -> C# outline 2015 -> Install
@@ -281,4 +358,5 @@
     </div>
 
 </body>
+
 </html>
