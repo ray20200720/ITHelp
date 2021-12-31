@@ -43,6 +43,9 @@
             padding-left: 0.5em;
             background: #aaa;
         }
+        hr {
+            border: 0.1px solid
+        }
     </style>
 </head>
 
@@ -100,6 +103,7 @@
                 <br>
                 <a href="https://vim.fandom.com/wiki/Disable_beeping" class="btn btn-secondary btn-sm"
                     target="_blank">參考資料</a>
+                
                 <hr>
                 <!-- ---------------------------------------------------------------------------- -->
 
@@ -159,7 +163,7 @@
                 <p>
                     git restore xxx檔名
                 </p>
-                <img src="pictures\git\git-restore-06-small.png" alt="">
+                <div class="code">&nbsp;&nbsp;D:\ITHelp\SampleCode\git>git restore git-restore</div>
                 <hr>
 
                 <!-- ---------------------------------------------------------------------------- -->
@@ -215,7 +219,7 @@
                 <h5>[HTML]</h5>
                 <h4 class="title">How to display &amp;nbsp; in HTML</h4>
                 <p>
-                    use <span><strong class="important">&amp;amp;</strong></span>
+                    use <strong class="important">&amp;amp;</strong>
                 </p>
                 <a href="https://github.com/Winmay/Winmay.github.io/blob/master/_posts/2017-06-15-markdown%E5%A6%82%E4%BD%95%E6%98%BE%E7%A4%BAHtml%E7%89%B9%E6%AE%8A%E7%AC%A6%E5%8F%B7.md"
                     class="btn btn-secondary btn-sm" target="_blank">參考資料</a>
@@ -225,10 +229,10 @@
                 <h5>[HTML]</h5>
                 <h4 class="title">How to add space in HTML</h4>
                 <p>
-                    use <span><strong class="important">&amp;nbsp;</strong></span>
+                    use <strong class="important">&amp;nbsp;</strong>
                 </p>
                 <a href="https://github.com/Winmay/Winmay.github.io/blob/master/_posts/2017-06-15-markdown%E5%A6%82%E4%BD%95%E6%98%BE%E7%A4%BAHtml%E7%89%B9%E6%AE%8A%E7%AC%A6%E5%8F%B7.md"
-                    class="btn btn-secondary btn-sm" target="_blank">繼續閱讀</a>
+                    class="btn btn-secondary btn-sm" target="_blank">參考資料</a>
                 <hr>
 
                 <!-- ---------------------------------------------------------------------------- -->
@@ -236,10 +240,12 @@
                 <h5>[HTML]</h5>
                 <h4 class="title">How to display HTML tags as plain text</h4>
                 <p>
-                    <span><strong class="important">Replace < with &lt; and> with &gt;</strong></span>
+                    <span>replace < with <strong class="important">&amp;lt;</strong> </span><br>
+                    <span>replace > with <strong class="important">&amp;gt;</strong></span><br>
+                    <span>replace & with <strong class="important">&amp;amp;</strong></span><br>
                 </p>
                 <a href="https://stackoverflow.com/questions/6817262/how-to-display-html-tags-as-plain-text"
-                    class="btn btn-secondary btn-sm" target="_blank">繼續閱讀</a>
+                    class="btn btn-secondary btn-sm" target="_blank">參考資料</a>
                 <hr>
 
                 <!-- ---------------------------------------------------------------------------- -->
@@ -249,7 +255,6 @@
                 <p>
                     加上<span><strong class="important"> target="_blank"</strong></span>
                 </p>
-                <a href="#" class="btn btn-secondary btn-sm">繼續閱讀</a>
                 <hr>
 
                 <!-- ---------------------------------------------------------------------------- -->
@@ -260,13 +265,12 @@
                     參考 <a href="https://stackoverflow.com/questions/17883481/delete-a-file-named-nul-on-windows"
                         target="_blank">https://stackoverflow.com/questions/17883481/delete-a-file-named-nul-on-windows</a>
                     <br>
-
+                    用下列命令
                 </p>
-                用下列命令
-                <p>
-                    C:\> rename \\.\C:\..\NUL. deletefile.txt
-                    C:\> del deletefile.txt
-                </p>
+                <div class="code">
+                    &nbsp;&nbsp;C:\> rename \\.\C:\..\NUL. deletefile.txt<br>
+                    &nbsp;&nbsp;C:\> del deletefile.txt
+                </div>
                 <hr>
 
                 <!-- ---------------------------------------------------------------------------- -->
