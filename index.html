@@ -25,7 +25,7 @@
             padding-bottom: 1em;
         }
 
-        .code {
+        .mycode {
             background-color: black;
             color: white;
             padding-top: 0.5em;
@@ -33,18 +33,54 @@
             padding-left: 0.1em;
         }
 
+        .code {
+            font-size:18px;
+            padding: 10px; 
+            text-align: left; 
+            background: black; 
+            color: white;
+            border: 2px solid #e0e0e0; 
+            border-radius: 3px; margin: 15px 0 0;
+        }
+
         .title {
             text-decoration: underline;
         }
-
-        p {
-            padding-top: 0.5em;
-            padding-bottom: 0.5em;
-            padding-left: 0.5em;
-            background: #aaa;
+        
+        .mycard {
+            font-size:18px;
+            padding: 10px; 
+            text-align: left; 
+            background: #fafafa; 
+            border: 2px solid #e0e0e0; 
+            border-radius: 3px; margin: 15px 0 0;
         }
-        hr {
+
+        .myhr {
             border: 0.1px solid
+        }
+
+        .myhr-border-2 {
+            border: 2px solid black;
+        }
+
+        .myhr-border-4 {
+            border: 4px solid black;
+        }
+
+        .myhr-border-4-blue {
+            border: 4px solid blue;
+        }
+
+        .myhr-border-4-lightblue {
+            border: 4px solid #2196f3;
+        }
+        .myhr-border-4-darkcyan{
+            border: 4px solid darkcyan;
+        }
+
+        body{
+            background-color:#999999;
         }
     </style>
 </head>
@@ -86,56 +122,71 @@
     </nav>
 
     <div class="container" style="margin-top:30px">
-        <div class="row">
-            <div class="col-sm-12">
-
+        <!--------------------------------------------------------------------------------------------------------------->
+        <div class="card" style="margin-top: 50px;">
+            <div class="card-body">
                 <h5>[git bash]</h5>
-                <h4 class="title">解決git bash下的vim螢幕會閃一下(例如:按ESC時)</h4>
-                <p>
-                    在vim輸入:set novisualbell
-                </p>
+                <hr>
+                <h3>解決git bash下的vim螢幕會閃一下(例如:按ESC時)</h3>
+                <hr class="myhr-border-4-darkcyan">
+                <p>在vim輸入:set novisualbell</p>
+                <h5>Command:</h5>
                 <div class="code">&nbsp;&nbsp;:set novisualbell</div>
                 <br>
-                <p>
-                    或者修改.vimrc,加上set novisualbell
+                <p>或者修改.vimrc,加上set novisualbell</p>
+                <h5>.vimrc</h5>
+                <p class="mycard">
+                    set novisualbell
                 </p>
-                <div class="code">&nbsp;&nbsp;set novisualbell</div>
                 <br>
-                <a href="https://vim.fandom.com/wiki/Disable_beeping" class="btn btn-secondary btn-sm"
-                    target="_blank">參考資料</a>
-                
-                <hr>
-                <!-- ---------------------------------------------------------------------------- -->
-
+                <a href="https://vim.fandom.com/wiki/Disable_beeping" class="btn btn-secondary btn-sm" target="_blank">參考資料</a>
+            </div>
+        </div>
+        <!--------------------------------------------------------------------------------------------------------------->
+        <div class="card" style="margin-top: 50px;">
+            <div class="card-body">
                 <h5>[git bash]</h5>
-                <h4 class="title">windows terminal + git bash 使用 del鍵 畫面會閃爍</h4>
+                <hr>
+                <h3>windows terminal + git bash 使用 del鍵 畫面會閃爍</h3>
+                <hr class="myhr-border-4-darkcyan">
                 <p>
-                    修改~/.inputrc
-                    加上set bell-style none
-                    重啟Windows Terminal
+                    修改~/.inputrc<br>
+                    加上set bell-style none<br>
+                    重啟Windows Terminal<br>
                 </p>
-                <div class="code">&nbsp;&nbsp;set bell-style nonel</div>
+                <h5>Example:</h5>
+                <p style="font-size:18px;padding: 10px; text-align: left; background: #fafafa; border: 2px solid #e0e0e0; border-radius: 3px; margin: 15px 0 0;">
+                    set bell-style nonel
+                </p>
                 <br>
-                <a href="https://github.com/microsoft/terminal/issues/7200#issuecomment-672786518"
-                    class="btn btn-secondary btn-sm" target="_blank">參考資料</a>
-                <hr>
-                <!-- ---------------------------------------------------------------------------- -->
-
+                <a href="https://github.com/microsoft/terminal/issues/7200#issuecomment-672786518" class="btn btn-secondary btn-sm" target="_blank">參考資料</a>
+            </div>
+        </div>
+        <!--------------------------------------------------------------------------------------------------------------->
+        <div class="card" style="margin-top: 50px;">
+            <div class="card-body">
                 <h5>[git bash]</h5>
-                <h4 class="title">git diff差異如何以左右方式顯示</h4>
+                <hr>
+                <h3>git diff差異如何以左右方式顯示</h3>
+                <hr class="myhr-border-4-darkcyan">
                 <p>
-                    使用git diff指令比較檔案差異呈現的結果是上下顯示,如何以左右方式顯示?<br>
-                    有一種方式是透過指定difftool指定為vimdiff
+                    使用git diff指令比較檔案差異預設呈現的結果是上下顯示,如何以左右方式顯示?<br>
+                    有一種方式是透過指定difftool指定比較差異程式為vimdiff (預設使用的比較差異程式是diff)
                 </p>
+                <h5>Command:</h5>
                 <div class="code">&nbsp;&nbsp;$ git difftool --tool=vimdiff</div>
                 <br>
                 <a href="https://stackoverflow.com/questions/7669963/how-can-i-get-a-side-by-side-diff-when-i-do-git-diff"
                     class="btn btn-secondary btn-sm" target="_blank">參考資料</a>
-                <hr>
-                <!-- ---------------------------------------------------------------------------- -->
-
+            </div>
+        </div>
+        <!--------------------------------------------------------------------------------------------------------------->
+        <div class="card" style="margin-top: 50px;">
+            <div class="card-body">
                 <h5>[HTML]</h5>
-                <h4 class="title">How to change the default value for select element and checkbox in HTML</h4>
+                <h3>How to change the default value for select element and checkbox in HTML</h3>
+                <hr class="myhr-border-4-darkcyan">
+                <h5>Example:</h5>
                 <select name="" id="">
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -143,37 +194,47 @@
                 </select>
                 <input type="checkbox" checked>
                 <br>
+                <br>
                 <div>
                     select option use <span><strong class="important">selected</strong></span> like below:
                 </div>
-                <div class="code">&nbsp;&nbsp;&lt;option value="3" selected&gt;</div>
-                checkbox use <span><strong class="important">checked</strong></span> like below:
-                <div class="code">&nbsp;&nbsp;&lt;input type="checkbox" checked&gt;</div>
+                <div class="code">&lt;option value="3" selected&gt;</div>
+                    checkbox use <span><strong class="important">checked</strong></span> like below:
+                <div class="code">&lt;input type="checkbox" checked&gt;</div>
+                <br>
+                
                 <br>
                 <a href="https://stackoverflow.com/questions/3518002/how-can-i-set-the-default-value-for-an-html-select-element"
                     class="btn btn-secondary btn-sm" target="_blank">參考資料1</a>
                 <a href="https://stackoverflow.com/questions/47743629/input-checkbox-checked-by-default"
                     class="btn btn-secondary btn-sm" target="_blank">參考資料2</a>
-                <hr>
-
-                <!-- ---------------------------------------------------------------------------- -->
-
+            </div>
+        </div>
+        <!--------------------------------------------------------------------------------------------------------------->
+        <div class="card" style="margin-top: 50px;">
+            <div class="card-body">
                 <h5>[git]</h5>
-                <h4 class="title">如何將程式碼恢復成原來的(類似svn的revert功能)</h4>
-                <p>
-                    git restore xxx檔名
-                </p>
-                <div class="code">&nbsp;&nbsp;D:\ITHelp\SampleCode\git>git restore git-restore</div>
                 <hr>
-
-                <!-- ---------------------------------------------------------------------------- -->
-
+                <h3>如何將程式碼恢復成原來的(類似svn的revert功能)</h3>
+                <hr class="myhr-border-4-darkcyan">
+                <p>
+                    git restore 要恢復的檔名
+                </p>
+                <h5>Command:</h5>
+                <div class="code">&nbsp;&nbsp;D:\ITHelp\SampleCode\git>git restore git-restore</div>
+                <br>
+            </div>
+        </div>
+        <!--------------------------------------------------------------------------------------------------------------->
+        <div class="card" style="margin-top: 50px;">
+            <div class="card-body">
                 <h5>[Barcode]</h5>
-                <h4 class="title">UPC-A條碼開頭4條線還是2條線? 一樣不一樣?</h4>
+                <hr>
+                <h3>UPC-A條碼開頭4條線還是2條線? 一樣不一樣?</h3>
+                <hr class="myhr-border-4-darkcyan">
                 <p>
                     客戶反應我們列印出來的UPC-A格式不一樣(如下圖一).
                 </p>
-
                 <img src="pictures\barcode\UPC-A-01-small.png" alt="UPC-A-01">
                 <p>
                     客戶列出差異如下圖二
@@ -196,49 +257,62 @@
                     接著發生一件讓我很驚訝的事情,<span style="color: red;">兩張的條碼是完全一樣的</span>.<br>
                     我才恍然大悟,原來客戶和我們公司的標籤只是數字位置不同,導致產生格式不一致的錯覺.<br>
                     如果就條碼來看是完全一致的,如果就數字來看,也是完全一致.<span style="color: red;">這兩張條碼根本就是一樣的.</span><br>
-                    我重新標示如下,你就能看出兩張條碼根本就是一樣的<br>
+                    重新標示如下,就能看出兩張條碼根本就是一樣的.<br>
                 </p>
 
                 <img src="pictures\barcode\UPC-A-final.png" alt="">
-                <hr>
-
-                <!-- ---------------------------------------------------------------------------- -->
-
+                <br>
+            </div>
+        </div>
+        <!--------------------------------------------------------------------------------------------------------------->
+        <div class="card" style="margin-top: 50px;">
+            <div class="card-body">
                 <h5>[ASP.NET]</h5>
-                <h4 class="title">使用 acsx 與 aspx - WebUserControl</h4>
+                <hr>
+                <h3>使用 acsx 與 aspx - WebUserControl</h3>
+                <hr class="myhr-border-4-darkcyan">
                 <p>
                     把元件放在 ascx 上，然後在 aspx 裡使用
                 </p>
                 <a href="https://blog.xuite.net/tolarku/blog/48519600-%5BASP.NET%5D+%E4%BD%BF%E7%94%A8+acsx+%E8%88%87+aspx+-+WebUserControl"
                     class="btn btn-secondary btn-sm" target="_blank">參考資料</a>
-                <hr>
-
-                <!-- ---------------------------------------------------------------------------- -->
-
-
+            </div>
+        </div>
+        <!--------------------------------------------------------------------------------------------------------------->
+        <div class="card" style="margin-top: 50px;">
+            <div class="card-body">
                 <h5>[HTML]</h5>
-                <h4 class="title">How to display &amp;nbsp; in HTML</h4>
+                <hr>
+                <h3>How to display &amp;nbsp; in HTML</h3>
+                <hr class="myhr-border-4-darkcyan">
                 <p>
                     use <strong class="important">&amp;amp;</strong>
                 </p>
                 <a href="https://github.com/Winmay/Winmay.github.io/blob/master/_posts/2017-06-15-markdown%E5%A6%82%E4%BD%95%E6%98%BE%E7%A4%BAHtml%E7%89%B9%E6%AE%8A%E7%AC%A6%E5%8F%B7.md"
                     class="btn btn-secondary btn-sm" target="_blank">參考資料</a>
-                <hr>
-
-                <!-- ---------------------------------------------------------------------------- -->
+            </div>
+        </div>
+        <!--------------------------------------------------------------------------------------------------------------->
+        <div class="card" style="margin-top: 50px;">
+            <div class="card-body">
                 <h5>[HTML]</h5>
-                <h4 class="title">How to add space in HTML</h4>
+                <hr>
+                <h3>How to add space in HTML</h3>
+                <hr class="myhr-border-4-darkcyan">
                 <p>
                     use <strong class="important">&amp;nbsp;</strong>
                 </p>
                 <a href="https://github.com/Winmay/Winmay.github.io/blob/master/_posts/2017-06-15-markdown%E5%A6%82%E4%BD%95%E6%98%BE%E7%A4%BAHtml%E7%89%B9%E6%AE%8A%E7%AC%A6%E5%8F%B7.md"
                     class="btn btn-secondary btn-sm" target="_blank">參考資料</a>
-                <hr>
-
-                <!-- ---------------------------------------------------------------------------- -->
-
+            </div>
+        </div>
+        <!--------------------------------------------------------------------------------------------------------------->
+        <div class="card" style="margin-top: 50px;">
+            <div class="card-body">
                 <h5>[HTML]</h5>
-                <h4 class="title">How to display HTML tags as plain text</h4>
+                <hr>
+                <h3>How to display HTML tags as plain text</h3>
+                <hr class="myhr-border-4-darkcyan">
                 <p>
                     <span>replace < with <strong class="important">&amp;lt;</strong> </span><br>
                     <span>replace > with <strong class="important">&amp;gt;</strong></span><br>
@@ -246,21 +320,27 @@
                 </p>
                 <a href="https://stackoverflow.com/questions/6817262/how-to-display-html-tags-as-plain-text"
                     class="btn btn-secondary btn-sm" target="_blank">參考資料</a>
-                <hr>
-
-                <!-- ---------------------------------------------------------------------------- -->
-
+            </div>
+        </div>
+        <!--------------------------------------------------------------------------------------------------------------->
+        <div class="card" style="margin-top: 50px;">
+            <div class="card-body">
                 <h5>[HTML]</h5>
-                <h4 class="title">a href如何開啟新頁</h4>
+                <hr>
+                <h3>a href如何開啟新頁</h3>
+                <hr class="myhr-border-4-darkcyan">
                 <p>
                     加上<span><strong class="important"> target="_blank"</strong></span>
                 </p>
-                <hr>
-
-                <!-- ---------------------------------------------------------------------------- -->
-
+            </div>
+        </div>
+        <!--------------------------------------------------------------------------------------------------------------->
+        <div class="card" style="margin-top: 50px;">
+            <div class="card-body">
                 <h5>[Windows]</h5>
-                <h4 class="title">檔名NUL無法刪除</h4>
+                <hr>
+                <h3>檔名NUL無法刪除</h3>
+                <hr class="myhr-border-4-darkcyan">
                 <p>
                     參考 <a href="https://stackoverflow.com/questions/17883481/delete-a-file-named-nul-on-windows"
                         target="_blank">https://stackoverflow.com/questions/17883481/delete-a-file-named-nul-on-windows</a>
@@ -271,22 +351,29 @@
                     &nbsp;&nbsp;C:\> rename \\.\C:\..\NUL. deletefile.txt<br>
                     &nbsp;&nbsp;C:\> del deletefile.txt
                 </div>
-                <hr>
-
-                <!-- ---------------------------------------------------------------------------- -->
-
+            </div>
+        </div>
+        <!--------------------------------------------------------------------------------------------------------------->
+        <div class="card" style="margin-top: 50px;">
+            <div class="card-body">
                 <h5>[ASP.NET]</h5>
-                <h4 class="title">Windows Form UI凍結沒反應</h4>
+                <hr>
+                <h3>Windows Form UI凍結沒反應</h3>
+                <hr class="myhr-border-4-darkcyan">
                 <p>
                     參考 <a href="https://blog.darkthread.net/Files/DKTD-WinFormThreading.pdf"
                         target="_blank">https://blog.darkthread.net/Files/DKTD-WinFormThreading.pdf</a>
                 </p>
-                <hr>
-
-                <!-- ---------------------------------------------------------------------------- -->
-
+            </div>
+        </div>
+        
+        <!--------------------------------------------------------------------------------------------------------------->
+        <div class="card" style="margin-top: 50px;">
+            <div class="card-body">
                 <h5>[ASP.NET]</h5>
-                <h4 class="title">如何將專案Visual Studio 2008升級至Visual Studio 2015?</h4>
+                <hr>
+                <h3>如何將專案Visual Studio 2008升級至Visual Studio 2015?</h3>
+                <hr class="myhr-border-4-darkcyan">
                 <p>
                     <span class="important"><strong>1.複製xxx.sln,並將原xxx.sln改名為xxx2008.sln</strong></span><br>
                     <span class="important"><strong>2.修改xxx.sln</strong></span><br>
@@ -298,63 +385,53 @@
                     將<strong>ToolsVersion="<span class="my-font-color-red">3.5</span>"</strong> 改為
                     <strong>ToolsVersion="<span class="my-font-color-red">4.0</span>"</strong>
                 </p>
-                <hr>
-
-                <!-- ---------------------------------------------------------------------------- -->
-
+            </div>
+        </div>
+        <!--------------------------------------------------------------------------------------------------------------->
+        <div class="card" style="margin-top: 50px;">
+            <div class="card-body">
                 <h5>[Visual Studio Code]</h5>
-                <h4 class="title">如何在Visual Studio Code自動排版CSS?</h4>
+                <hr>
+                <h3>如何在Visual Studio Code自動排版CSS?</h3>
+                <hr class="myhr-border-4-darkcyan">
                 <p>
                     <strong>安裝CSS Formatter插件: </strong><br>
                     View -> Extension -> CSS Formatter -> Install<br>
                     <strong>使用CSS Formatter插件: </strong><br>
                     滑鼠右鍵 -> Format Document <br>
                 </p>
-                <hr>
-
-                <!-- ---------------------------------------------------------------------------- -->
-
+            </div>
+        </div>
+         <!--------------------------------------------------------------------------------------------------------------->
+         <div class="card" style="margin-top: 50px;">
+            <div class="card-body">
                 <h5>[Visual Studio Code]</h5>
-                <h4 class="title">如何在Visual Studio Code預覽HTML?</h4>
+                <hr>
+                <h3>如何在Visual Studio Code預覽HTML?</h3>
+                <hr class="myhr-border-4-darkcyan">
                 <p>
                     <strong>安裝HTML Preview插件:</strong> <br>
                     View -> Extension -> HTML Preview -> Install
                 </p>
-                <hr>
-
-                <!-- ---------------------------------------------------------------------------- -->
-
+            </div>
+        </div>
+        <!--------------------------------------------------------------------------------------------------------------->
+        <div class="card" style="margin-top: 50px;">
+            <div class="card-body">
                 <h5>[Visual Studio 2015]</h5>
-                <h4 class="title">如何在Visual Studio內使if else等程式碼摺疊?</h4>
+                <hr>
+                <h3>如何在Visual Studio內使if else等程式碼摺疊?</h3>
+                <hr class="myhr-border-4-darkcyan">
                 <p>
                     <strong>安裝Outline插件:</strong><br>
                     Tools -> Extensions and Updates -> C# outline 2015 -> Install
                 </p>
-
-                <!--
-                <h2><a href="">SQL Tutorial</a></h2>
-                <h5>Ray, 2021-11-30</h5>
-                -->
-
-                <!-- Sample 1-->
-                <!--
-                <h2>TITLE HEADING</h2>
-                <h5>Title description, Sep 2, 2017</h5>
-                <div class="fakeimg">Fake Image</div>
-                <p>Some text..</p>
-                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-                -->
-
-                <!-- Sample 2-->
-                <!--
-                <h2><a href="ITHelp.html">[Visual Studio Code]如何在Visual Studio Code預覽HTML</a></h2>
-                <h5>Ray, 2021-12-01</h5>
-                <p>安裝HTML Preview插件</p>
-                <p>View -> Extension -> HTML Preview -> Install</p>
-                -->
             </div>
         </div>
+        <!--------------------------------------------------------------------------------------------------------------->
     </div>
+
+    <p></p>
 
     <div class="jumbotron text-center" style="margin-bottom:0">
         <!-- <p>Copyright ©2021 Ray Kuo</p> -->
