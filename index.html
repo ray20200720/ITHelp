@@ -44,6 +44,15 @@
                 margin: 15px 0 0;
             }
 
+            .shell {
+                font-size: 18px;
+                color: green;
+            }
+
+            .shell-slash{
+                color: blue;
+            }
+
             .title {
                 text-decoration: underline;
             }
@@ -125,6 +134,57 @@
         </nav>
 
         <div class="container" style="margin-top:30px">
+            <!--------------------------------------------------------------------------------------------------------------->
+            <div class="card" style="margin-top: 50px;">
+                <div class="card-body">
+                    <h5>[WSL]</h5>
+                    <hr>
+                    <h3>如何查看當前debian的版本</h3>
+                    <hr class="myhr-border-4-darkcyan">
+                    <h5>Command:</h5>
+                    <div class="code">
+                        cat /etc/os-release
+                    </div>
+                    <h5>Example:</h5>
+                    <div class="code">
+                        <span class="shell">ray@wsl</span>:<span class="shell-slash">/</span>$ cat /etc/os-release <br>
+                        PRETTY_NAME="Debian GNU/Linux 9 (stretch)" <br>
+                        NAME="Debian GNU/Linux" <br>
+                        VERSION_ID="9"<br>
+                        VERSION="9 (stretch)"<br>
+                        VERSION_CODENAME=stretch<br>
+                        ID=debian<br>
+                        HOME_URL="https://www.debian.org/"<br>
+                        SUPPORT_URL="https://www.debian.org/support"<br>
+                        BUG_REPORT_URL="https://bugs.debian.org/"<br>
+                    </div>
+
+                    <br>
+                    <a href="https://github.com/microsoft/WSL/issues/4427" class="btn btn-secondary btn-sm"
+                        target="_blank">參考資料</a>
+                </div>
+            </div>
+            <!--------------------------------------------------------------------------------------------------------------->
+            <div class="card" style="margin-top: 50px;">
+                <div class="card-body">
+                    <h5>[visual studio 2022]</h5>
+                    <hr>
+                    <h3>修改Visual Studio預設的語言(Language)</h3>
+                    <hr class="myhr-border-4-darkcyan">
+                    <p>
+                        1.執行Visual Studio Installer<br>
+                        2.點擊"修改"<br>
+                        3.切換至"語言包"<br>
+                        4.選擇"English"<br>
+                        5.點擊"修改"<br>
+                        6.重新開啟Visual Studio<br>
+                        7.點擊"工具" -> "選項" -> "內部設定" -> "語言" -> 選擇"English"<br>
+                    </p>
+                    <br>
+                    <a href="https://unaura.com/visual-studio-change-the-interface-language/"
+                        class="btn btn-secondary btn-sm" target="_blank">參考資料</a>
+                </div>
+            </div>
             <!--------------------------------------------------------------------------------------------------------------->
             <div class="card" style="margin-top: 50px;">
                 <div class="card-body">
