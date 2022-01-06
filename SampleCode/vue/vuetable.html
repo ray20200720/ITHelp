@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.min.js"></script> -->
+    <style>
+        table {
+            font-family: 'Open Sans', sans-serif;
+            width: 750px;
+            border-collapse: collapse;
+            border: 3px solid #44475C;
+            margin: 10px 10px 0 10px;
+        }
+    
+        table th {
+            text-transform: uppercase;
+            text-align: left;
+            background: #44475C;
+            color: #FFF;
+            padding: 8px;
+            min-width: 30px;
+        }
+    
+        table td {
+            text-align: left;
+            padding: 8px;
+            border-right: 2px solid #7D82A8;
+        }
+    
+        table td:last-child {
+            border-right: none;
+        }
+    
+        table tbody tr:nth-child(2n) td {
+            background: #D4D8F9;
+        }
+    </style>
+</head>
+<body>
+    <table id="firstTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Phone</th>
+                <th>Profession</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr v-for="row in rows">
+                <td>{{row.id}}</td>
+                <td>{{row.name}}</td>
+                <td>{{row.phone}}</td>
+                <td>{{row.profession}}</td>
+            </tr>
+        </tbody>
+    </table>
+    <script>
+        const vm = new Vue({
+                el: '#firstTable',
+                data: {
+                    rows: [
+                        {
+                            id: 1,
+                            name: 'Ray',
+                            phone: 12345678,
+                            profession: 'Computer'
+                        }, {
+                            id: 2,
+                            name: 'Kuo',
+                            phone: 22334455,
+                            profession: 'Science'
+                        }
+                    ]
+                }
+            });
+    </script>
+</body>
+</html>
