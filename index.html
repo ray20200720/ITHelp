@@ -191,16 +191,46 @@
                 </a>
             </div>
         </div>
-        <!-------------------[Antix Linux] -19.1 安装 fcitx 输入法-------------------------------------------------------------------------------------------->
+        <!-------------------[Antix Linux] -19.2 中文输入法-------------------------------------------------------------------------------------------->
         <div class="card" style="margin-top: 50px;">
             <div class="card-body">
                 <h5>[Antix Linux]</h5>
                 <hr>
-                <h3>Antix Linux -19.1 安装 fcitx 输入法</h3>
+                <h3>Antix Linux -19.2 中文输入法</h3>
                 <hr class="myhr-border-4-darkcyan">
                 <br>
+                <p>
+                    1. 安裝gcin  <br>
+                    <div class="code">
+                        <span class="shell">$ </span>sudo apt install gcin<br>
+                    </div>
+                    <br>
+                    2. 設定~/.desktop-session/desktop-session.conf<br>
+                    <div class="code">
+                        <span class="shell">$ </span>vi ~/.desktop-session/desktop-session.conf<br>
+                    </div>
+                    <br>
+                    加上export XMODIFIERS="@im=gcin"
+                    <div class="code">
+                        <span class="shell"></span>export XMODIFIERS="@im=gcin"<br>
+                    </div>
+                    <br>
+                    3. 設定~/.desktop-session/strartup<br>
+                    <div class="code">
+                        <span class="shell">$ </span>vi ~/.desktop-session/startup<br>
+                    </div>
+                    <br>
+                    加上gcin &"
+                    <div class="code">
+                        <span class="shell"></span>gcin &<br>
+                    </div>
+                    <br>
+                    4. 登出再登入
+                </p>
+                <a href="https://newtoypia.blogspot.com/2016/08/antix-16.html" class="btn btn-secondary btn-sm"
+                    target="_blank">參考資料 1</a>
                 <a href="https://www.jianshu.com/p/102  9d82cbbb1" class="btn btn-secondary btn-sm"
-                    target="_blank">參考資料</a>
+                    target="_blank">參考資料 2</a>
             </div>
         </div>
         <!---------------------[GitHub] git push error------------------------------------------------------------------------------------------>
