@@ -134,6 +134,88 @@
 
     <div class="container" style="margin-top:30px">
         <!--------------------------------------------------------------------------------------------------------------->
+        <!--------------------------------------------------------------------------------------------------------------->
+        <div class="card" style="margin-top: 50px;">
+            <div class="card-body">
+                <h5>[DBeaver]</h5>
+                <hr>
+                <h3>在SQL Editor裡垂直選取</h3>
+                <hr class="myhr-border-4-darkcyan">
+                <p>
+                    Alt+Command+A on a Mac (Alt+Shift+A on Win/Linux) will put DBeaver into block selection mode.<br>
+                    Then you can select a block/column selection.<br>
+                </p>
+                <h5>Command</h5>
+                <div class="code">
+                    <code class="mycode">
+                       Alt + Shift + A<br>
+                    </code>
+                </div> 
+                <br>
+                <p>
+                    
+                </p>
+                <a href="https://github.com/dbeaver/dbeaver/issues/1741" class="btn btn-secondary btn-sm"
+                    target="_blank"> 參考資料
+                </a>
+                <br>
+                
+            </div>
+        </div>
+        <!-- [ASP.NET]增加以下siteMap設定是因為測試Server上的machine.config設定了MySqlSiteMapProvider會導致default.aspx頁面報錯-->
+        <div class="card" style="margin-top: 50px;">
+            <div class="card-body">
+                <h5>[ASP.NET]</h5>
+                <hr>
+                <h3>解決"Unable to connect to any of the specified MySQL hosts."錯誤</h3>
+                <hr class="myhr-border-4-darkcyan">
+                <p>
+                    錯誤發生是因為在頁面(ex:default.aspx)有用到ASP.NET的控件SiteMap,會先去讀取Web.Config裡關於siteMap的設定.<br>
+                    當Web.Config找不到siteMap設定時,會轉往machine.config找siteMap的設定,但machine.config內的MySqlSiteMapProvider設定是無法正常執行,導致報錯.<br>
+                    有2個解決方法:<br>
+                    方法1: 註解掉machine.config內關於siteMap的設定
+                    方法2: Web.Config增加siteMap設定,且必須設定defaultProvider,在providers需要先clear.(如下)
+                </p>
+                <h5>Web.Config</h5>
+                <div class="code">
+                    <code class="mycode">
+                        &lt;siteMap defaultProvider=&quot;PageSiteMap&quot;&gt;<br>
+                        &lt;providers&gt;<br>
+                            &lt;clear/&gt;<br>
+                            &lt;add name=&quot;PageSiteMap&quot; type=&quot;System.Web.XmlSiteMapProvider&quot; siteMapFile=&quot;~/Web.sitemap&quot; /&gt;<br>
+                        &lt;/providers&gt;<br>
+                        &lt;/siteMap&gt;<br>
+                    </code>
+                </div> 
+                <br>
+                <p>
+                    
+                </p>
+                <a href="https://matol.net/Blog/BlogContent/a1dbcee9-e553-4a56-9cf1-dd76c4948f4f" class="btn btn-secondary btn-sm"
+                    target="_blank"> 參考資料
+                </a>
+                <a href="https://stackoverflow.com/questions/46424555/strange-mysqlsitemapprovider-error-although-xmlsitemapprovider-is-being-used" class="btn btn-secondary btn-sm"
+                target="_blank"> 參考資料
+                </a>
+                <a href="https://stackoverflow.com/questions/32944070/asp-net-cannot-find-mysql-host-even-though-im-not-using-mysql" class="btn btn-secondary btn-sm"
+                    target="_blank"> 參考資料
+                </a>
+                <a href="https://stackoverflow.com/questions/38600679/getting-error-unable-to-connect-to-any-of-the-specified-mysql-hosts-in-an-ap" class="btn btn-secondary btn-sm"
+                target="_blank"> 參考資料
+                </a>
+                <a href="https://www.twblogs.net/a/5b8913072b71775d1cdfba2c" class="btn btn-secondary btn-sm"
+                target="_blank"> 參考資料
+                </a>
+                <a href="https://welkingunther.pixnet.net/blog/post/27986900" class="btn btn-secondary btn-sm"
+                target="_blank"> 參考資料
+                </a>
+                <a href="https://dotblogs.com.tw/lolota/2008/04/10/2792" class="btn btn-secondary btn-sm"
+                target="_blank"> 參考資料
+                </a>
+                <br>
+                
+            </div>
+        </div>
 		<!----------[ASP.NET] TreeView Sample --------------------------------------------------------------------------->
 		<div class="card" style="margin-top: 50px;">
             <div class="card-body">
