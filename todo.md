@@ -48,3 +48,18 @@
     * [Column / block text selection in SQL editor #1741](https://github.com/dbeaver/dbeaver/issues/1741)    
     Alt+Command+A on a Mac (Alt+Shift+A on Win/Linux) will put DBeaver into block selection mode. Then you can select a block/column selection.
     * [DBeaver Documentation Shortcuts](https://dbeaver.com/docs/wiki/Shortcuts/21.3/)
+
+- JavaScript
+	* [讀懂 ECMAScript 規格 ](http://www.ruanyifeng.com/blog/2015/11/ecmascript-specification.html)
+	* [讀懂 ECMAScript 規格 - ECMAScript 6入門](https://es6.ruanyifeng.com/)
+	* [Exploring ES6](https://exploringjs.com/es6/)
+	
+- Vim
+	* [Vundle](https://github.com/VundleVim/Vundle.vim)
+	
+- NodeJs
+	* [Node.js 教程](https://www.runoob.com/nodejs/nodejs-tutorial.html)
+	* [Node入門](https://www.nodebeginner.org/index-zh-tw.html)
+	
+- 函數編程
+	* [名詞王國中的死刑](http://steve-yegge.blogspot.com/2006/03/execution-in-kingdom-of-nouns.html)
