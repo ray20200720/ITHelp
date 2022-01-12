@@ -1,4 +1,6 @@
 - Power Shell
+    * [PowerShell Official Document](https://docs.microsoft.com/zh-tw/powershell/scripting/learn/ps101/01-getting-started?view=powershell-7.2)
+    * [PowerShell 101](https://leanpub.com/powershell101)
     * [PowerShell 初學者快速入門教學](https://officeguide.cc/powershell-beginner-introduction/)
     * [PowerShell 搜尋、取代檔案內容教學與範例](https://officeguide.cc/powershell-find-and-replace-text-in-file-tutorial-examples/)
     * [PowerShell 的 For 迴圈用法教學與範例](https://officeguide.cc/powershell-for-loop-tutorial-examples/)
@@ -60,6 +62,14 @@
 - NodeJs
 	* [Node.js 教程](https://www.runoob.com/nodejs/nodejs-tutorial.html)
 	* [Node入門](https://www.nodebeginner.org/index-zh-tw.html)
+    * [Node.JS - 30 天入門學習筆記](https://ithelp.ithome.com.tw/users/20103526/ironman/1081)
 	
 - 函數編程
 	* [名詞王國中的死刑](http://steve-yegge.blogspot.com/2006/03/execution-in-kingdom-of-nouns.html)
+
+- FTP
+    * [主動式與被動式FTP 差別](http://blog.kenyang.net/2010/10/28/ftp)
+    * [windows-commands ftp](https://docs.microsoft.com/zh-tw/windows-server/administration/windows-commands/ftp)
+
+- Chrome
+    * [解決Chrome網頁編碼顯示亂碼](https://www.yenchen-design.com/diary/%E8%A7%A3%E6%B1%BAchrome%E7%B6%B2%E9%A0%81%E7%B7%A8%E7%A2%BC%E9%A1%AF%E7%A4%BA%E4%BA%82%E7%A2%BC/)
