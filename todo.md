@@ -1,3 +1,23 @@
+- Windows Terminal 
+    {
+        "bellStyle": "none",
+        "commandline": "C:\\cygwin64\\bin\\bash.exe -l",
+        "guid": "{ebdd6054-d0f2-4649-9a06-529ebbb0a95a}",
+        "icon": "C:\\cygwin64\\Cygwin-Terminal.ico",
+        "name": "Cygwin",
+        "startingDirectory": "C:\\cygwin64\\home"				
+    }
+
+    {
+        "bellStyle": "none",
+        "commandline": "C:\\cygwin64\\bin\\mintty.exe -i /Cygwin-Terminal.ico",
+        "guid": "{ebdd6054-d0f2-4649-9a06-529ebbb0a95a}",
+        "icon": "C:\\cygwin64\\Cygwin-Terminal.ico",
+        "name": "Cygwin",
+        "startingDirectory": "C:\\cygwin64\\home"				
+    }
+    * [如何将cygwin嵌入windows terminal中](https://blog.csdn.net/shan165310175/article/details/113628574)
+
 - Power Shell
     * [PowerShell Official Document](https://docs.microsoft.com/zh-tw/powershell/scripting/learn/ps101/01-getting-started?view=powershell-7.2)
     * [PowerShell 101](https://leanpub.com/powershell101)
@@ -73,3 +93,18 @@
 
 - Chrome
     * [解決Chrome網頁編碼顯示亂碼](https://www.yenchen-design.com/diary/%E8%A7%A3%E6%B1%BAchrome%E7%B6%B2%E9%A0%81%E7%B7%A8%E7%A2%BC%E9%A1%AF%E7%A4%BA%E4%BA%82%E7%A2%BC/)
+
+- markdown
+    * [Markdown線上編輯器-MdEditor](https://www.mdeditor.tw/)
+    * [Markdown(入門)——文字設定 -＞(字型、字號、顏色和背景色)](https://iter01.com/545467.html)
+
+- Linux
+    - [Linux学习教程，Linux入门教程](http://c.biancheng.net/linux_tutorial/)
+    
+    - command
+        - info
+            - [介紹一下linux命令info 命令](https://www.gushiciku.cn/pl/gO6O/zh-tw)
+            - [Linux info命令](http://c.biancheng.net/view/768.html)
+    
+    - shell
+        - [Shell脚本：Linux Shell脚本学习指南](http://c.biancheng.net/shell/)
