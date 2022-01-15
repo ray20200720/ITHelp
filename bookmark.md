@@ -1,6 +1,10 @@
 - ASP.NET
     * [ASP.NET Web Form 入門30天](https://ithelp.ithome.com.tw/users/20120056/ironman/2281)
 
+- Blazor
+    * [使用Blazor 開發經驗blog](https://csharpkh.blogspot.com/2020/11/Blazor-Server-Side-Full-Stack-Case-Study-JavaScript-Story.html)
+    * [入門教學網站](https://www.youtube.com/watch?v=SfXJf7Q3dg4&list=PLUHhEA6x1LH-MTqXJTNElSPkYFTMFHvsi)        
+
 - Chrome
     * [解決Chrome網頁編碼顯示亂碼](https://www.yenchen-design.com/diary/%E8%A7%A3%E6%B1%BAchrome%E7%B6%B2%E9%A0%81%E7%B7%A8%E7%A2%BC%E9%A1%AF%E7%A4%BA%E4%BA%82%E7%A2%BC/)
     
@@ -13,6 +17,9 @@
     Alt+Command+A on a Mac (Alt+Shift+A on Win/Linux) will put DBeaver into block selection mode. Then you can select a block/column selection.
     * [DBeaver Documentation Shortcuts](https://dbeaver.com/docs/wiki/Shortcuts/21.3/)
 
+- Emacs 
+	* [版本控制：Emacs 的 Git 介面 Magit - 1](https://ithelp.ithome.com.tw/articles/10200840)
+
 - JavaScript
 	* [讀懂 ECMAScript 規格 ](http://www.ruanyifeng.com/blog/2015/11/ecmascript-specification.html)
 	* [讀懂 ECMAScript 規格 - ECMAScript 6入門](https://es6.ruanyifeng.com/)
@@ -24,6 +31,12 @@
 
 - Git
     * [Git達人教你搞懂GitHub基礎觀念](https://www.ithome.com.tw/news/95283)
+	* [Git for Windows](https://gitforwindows.org/)
+	* [Git Client tool](https://tortoisegit.org/)
+	* [申請Git 帳號](http://10.15.1.91:8083/)
+	* https://backlog.com/git-tutorial/tw/intro/intro1_1.html
+	* https://zhuanghongkuan1.gitbooks.io/demo0115/content/chapter4/sc4-4.html
+	* https://github.com/doggy8088/Learn-Git-in-30-days/blob/master/zh-tw/README.md
 
 - Git Commit後悔
     * [剛才的 Commit 後悔了，想要拆掉重做](https://gitbook.tw/chapters/using-git/reset-commit)

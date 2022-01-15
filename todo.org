@@ -1,0 +1,28 @@
+#+title: To Do List
+#+author: Ray Kuo
+
+* TODO [ASP.NET] MasterPage.master����
+<link rel="Stylesheet" href="CommonControl/jquery-ui-1.11.4/jquery-ui.css" />
+
+* TODO Emacs + git
+
+* VS2008 Upgrade to VS2019
+    1. modify sln: 
+    Microsoft Visual Studio Solution File, Format Version 10.00
+    Microsoft Visual Studio Solution File, Format Version 11.00
+    2. remark sln:
+    <ProjectTypeGuids>{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    3. modify csproj:
+    <Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    4. sln: project dependencies
+    Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITHelp.CheckModule.Filter", "ITHelp.CheckModule\ITHelp.CheckModule.Filter\ITHelp.CheckModule.Filter.csproj", "{616FFBB4-95D3-4BEA-8FF6-AB8C04F472BE}"
+        ProjectSection(ProjectDependencies) = postProject
+            {470AB98E-D4F7-48EE-B8EE-AB025892D618} = {470AB98E-D4F7-48EE-B8EE-AB025892D618}
+        EndProjectSection
+    EndProject
+
+    ITHelp.CheckModule.Filter -> Build Dependencies -> Project Dependencies -> Checked  
+    5.Open Workflow2012.csproj then save Workflow2012.sln
+
+[[https://stackoverflow.com/questions/35280237/how-can-i-change-visual-studios-build-order-for-reflection-based-project-depend][How can I change Visual Studio's build order for reflection based project dependencies?]]
