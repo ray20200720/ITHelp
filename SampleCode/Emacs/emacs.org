@@ -1,7 +1,7 @@
 #+title: Emacs 
 #+author: Ray.Kuo
 
-* How to manual install evil mode
+* How to install evil mode manually 
 
    git clone --depth 1 https://github.com/emacs-evil/evil.git
    
@@ -11,6 +11,21 @@
    (require 'evil)
    (evil-mode 1)
 
-** Reference
-   - [[https://evil.readthedocs.io/en/latest/overview.html#manual-installation][Manual installation]]
+* [[https://orgmode.org/][org-mode]]
 
+  - Shift + Left/Right :
+    1) in head *
+    2) in list
+
+  - Alt + Enter
+  - Ctrl + c Ctrl + o : open link  
+    
+* reference
+
+  [[https://ithelp.ithome.com.tw/users/20084176/ironman/674?page=1][EMACS 新思維]]
+  [[http://blog.lujun9972.win/emacs-document/][EMACS-DOCUMENT]]    
+  [[https://evil.readthedocs.io/en/latest/index.html][Evil]]
+  [[https://melpa.org/][MELPA]]
+  
+     
+    
