@@ -1,0 +1,16 @@
+#+title: Emacs 
+#+author: Ray.Kuo
+
+* How to manual install evil mode
+
+   git clone --depth 1 https://github.com/emacs-evil/evil.git
+   
+   mkdir ~/.emacs.d/init.el
+   
+   (add-to-list 'load-path "~/Project/ITHelp/SampleCode/Emacs/evil")
+   (require 'evil)
+   (evil-mode 1)
+
+** Reference
+   - [[https://evil.readthedocs.io/en/latest/overview.html#manual-installation][Manual installation]]
+
