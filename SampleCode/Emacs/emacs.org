@@ -11,35 +11,61 @@
    (require 'evil)
    (evil-mode 1)
 
+* evil-mode
+
+** Hot-key
+  - C-b : Page Up
+  - C-d : 1/2 Page Up
+  - C-f : Page Down
+  - C-u : 1/2 Page Down
+  - ) : jump forward one sentence
+  - ( : jump backward one sentence
+  - { : jump forward one paragraph 
+  - } : jump backward one paragraph
+  - H : Jump to the top of the screen
+  - M : Jump to the middle of the screen
+  - L : Jump to the bottom of the screen
+
+** Reference
+   - [How To Page Up and Page Down In Vim/Vi?](https://linuxtect.com/how-to-page-up-and-page-down-in-vim-vi/)
+   - [Vim Tip - Moving around](https://vim.fandom.com/wiki/Moving_around)
+
 * [[https://orgmode.org/][org-mode]]
 
+** Hot-key
   - Shift + Left/Right :
     1) in head *
     2) in list
-  - Alt + Enter
-  - Ctrl + c Ctrl + o : open link  
-  - c-c c-l : edit link
-
-** [[https://stackoverflow.com/questions/6874516/relative-line-numbers-in-emacs][Relative Line Numbers In Emacs]]
-
-   [Relative Line Numbers In Emacs](https://stackoverflow.com/questions/6874516/relative-line-numbers-in-emacs)
-
-   #+begin_src emacs-lisp
-   (global-display-line-numbers-mode 1)
-   (setq display-line-numbers-type 'relative)
-   #+end_src
+  - M-Enter
+  - C-c C-o : open link  
+  - C-c C-l : edit link
+  - C-c C-t : [org-todo] add "TODO"
+  - C-c C-s : [org-schedule]
+    - < : backward one month
+    - > : forward one month
+    - ? : info
+    - o : other day
+    - . : today
+  - C-c C-d : [org-deadline]
 
 ** reference
    - [[https://orgmode.org/][Org Mode Official WebSite]]
    - [[https://orgmode.org/quickstart.html][Org Mode quick start]]
    - [[https://orgmode.org/guide/][Org Mode guide]]
 
-* reference
+* [[https://stackoverflow.com/questions/6874516/relative-line-numbers-in-emacs][Relative Line Numbers In Emacs]]
 
-  [[https://ithelp.ithome.com.tw/users/20084176/ironman/674?page=1][EMACS 新思維]]
-  [[http://blog.lujun9972.win/emacs-document/][EMACS-DOCUMENT]]    
-  [[https://evil.readthedocs.io/en/latest/index.html][Evil]]
-  [[https://melpa.org/][MELPA]]
+  [Relative Line Numbers In Emacs](https://stackoverflow.com/questions/6874516/relative-line-numbers-in-emacs)
+
+   #+begin_src emacs-lisp
+   (global-display-line-numbers-mode 1)
+   (setq display-line-numbers-type 'relative)
+   #+end_src
+
+* Reference
   
-     
-    
+  [EMACS-DOCUMENT](http://blog.lujun9972.win/emacs-document/)    
+  [一年成为Emacs高手 (像神一样使用编辑器)](https://github.com/redguardtoo/mastering-emacs-in-one-year-guide/blob/master/guide-zh.org)
+  [Evil](https://evil.readthedocs.io/en/latest/index.html)
+  [MELPA](https://melpa.org/)
+  [EMACS 新思維](https://ithelp.ithome.com.tw/users/20084176/ironman/674?page=1)
