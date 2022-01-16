@@ -16,10 +16,24 @@
   - Shift + Left/Right :
     1) in head *
     2) in list
-
   - Alt + Enter
   - Ctrl + c Ctrl + o : open link  
-    
+  - c-c c-l : edit link
+
+** [[https://stackoverflow.com/questions/6874516/relative-line-numbers-in-emacs][Relative Line Numbers In Emacs]]
+
+   [Relative Line Numbers In Emacs](https://stackoverflow.com/questions/6874516/relative-line-numbers-in-emacs)
+
+   #+begin_src emacs-lisp
+   (global-display-line-numbers-mode 1)
+   (setq display-line-numbers-type 'relative)
+   #+end_src
+
+** reference
+   - [[https://orgmode.org/][Org Mode Official WebSite]]
+   - [[https://orgmode.org/quickstart.html][Org Mode quick start]]
+   - [[https://orgmode.org/guide/][Org Mode guide]]
+
 * reference
 
   [[https://ithelp.ithome.com.tw/users/20084176/ironman/674?page=1][EMACS 新思維]]

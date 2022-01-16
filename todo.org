@@ -5,8 +5,8 @@
 <link rel="Stylesheet" href="CommonControl/jquery-ui-1.11.4/jquery-ui.css" />
 
 * TODO Emacs + git
-
-* VS2008 Upgrade to VS2019
+* DONE [Emacs] [[https://emacs.stackexchange.com/questions/61997/how-do-i-fix-incomprehensible-buffer-error-when-running-list-packages][How do I fix "incomprehensible buffer" error when running list-packages?]]
+* DONE [Visual Studio] VS2008 Upgrade to VS2019
     1. modify sln: 
     Microsoft Visual Studio Solution File, Format Version 10.00
     Microsoft Visual Studio Solution File, Format Version 11.00
@@ -26,3 +26,19 @@
     5.Open Workflow2012.csproj then save Workflow2012.sln
 
 [[https://stackoverflow.com/questions/35280237/how-can-i-change-visual-studios-build-order-for-reflection-based-project-depend][How can I change Visual Studio's build order for reflection based project dependencies?]]
+
+* DONE [Emacs] org mode
+  - [[https://orgmode.org/][Org Mode Official WebSite]]
+  - [[https://orgmode.org/quickstart.html][Org Mode quick start]]
+  - [[https://orgmode.org/guide/][Org Mode guide]]
+  - [[https://orgmode.org/manual/][The Org Manual]]
+
+* DONE [Emacs] relative line number
+
+  [[https://stackoverflow.com/questions/6874516/relative-line-numbers-in-emacs][Relative Line Numbers In Emacs]]
+  [Relative Line Numbers In Emacs](https://stackoverflow.com/questions/6874516/relative-line-numbers-in-emacs)
+
+#+begin_src emacs-lisp
+(global-display-line-numbers-mode 1)
+(setq display-line-numbers-type 'relative)
+#+end_src
