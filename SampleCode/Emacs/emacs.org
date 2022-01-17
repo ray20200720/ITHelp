@@ -1,6 +1,17 @@
 #+title: Emacs 
 #+author: Ray.Kuo
 
+* Basic
+** Hot-key
+   - S-Right/Left/Up/Down : select words
+   - M-w : [kill-ring-save] copy 
+   - C-y : [yank] paste
+   - C-h : [help]
+     - ? : display detail
+     - v : [describe-variable]
+     - f : [describe-function]
+     - k : [describe-key]
+
 * How to install evil mode manually 
 
    git clone --depth 1 https://github.com/emacs-evil/evil.git
@@ -33,9 +44,14 @@
 * [[https://orgmode.org/][org-mode]]
 
 ** Hot-key
-  - Shift + Left/Right :
-    1) in head *
-    2) in list
+  - S-Left/Right :
+    1. in head * : [org-todo]
+    2. in list : [org-do-promote/org-do-demote]
+    3. in table : [org-table-move-column-left/right]
+
+  | A | B |
+  | 1 | 2 |
+ 
   - M-Enter
   - C-c C-o : open link  
   - C-c C-l : edit link
@@ -47,6 +63,7 @@
     - o : other day
     - . : today
   - C-c C-d : [org-deadline]
+  - C-c C-j : [org-goto]
 
 ** reference
    - [[https://orgmode.org/][Org Mode Official WebSite]]
