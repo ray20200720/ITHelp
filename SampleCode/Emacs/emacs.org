@@ -2,6 +2,7 @@
 #+author: Ray.Kuo
 
 * Basic
+
 ** Hot-key
    - S-Right/Left/Up/Down : select words
    - M-w : [kill-ring-save] copy 
@@ -53,22 +54,51 @@
   | 1 | 2 |
  
   - M-Enter
-  - C-c C-o : open link  
-  - C-c C-l : edit link
-  - C-c C-t : [org-todo] add "TODO"
-  - C-c C-s : [org-schedule]
+  - [org-open-at-point] : C-c C-o --- open link  
+  - [org-insert-link]  C-c C-l : edit link
+  - [org-todo]       : C-c C-t  add "TODO"
+  - [org-schedule]   : C-c C-s  
     - < : backward one month
     - > : forward one month
     - ? : info
     - o : other day
     - . : today
-  - C-c C-d : [org-deadline]
-  - C-c C-j : [org-goto]
+  - [org-deadline]   : C-c C-d  
+  - [org-goto]       : C-c C-j  
+  - [org-time-stamp] : C-c .
+    
+  | org-todo                         | S-Left/Right | add "TODO" in head             |
+  | org-do-promote/org-do-demote     | S-Left/Right | in list                        |
+  | org-table-move-column-left/right | S-Left/Right | in table                       |
+  | org-open-at-point                | C-c C-o      | open link                      |
+  | org-insert-link                  | C-c C-l      | insert a link                  |
+  | org-todo                         | C-c C-t      | add "TODO"                     |
+  | org-schedule                     | C-c C-s      |                                |
+  |                                  | <            | backward one month             |
+  |                                  | >            | forward one month              |
+  |                                  | ?            | info                           |
+  |                                  | o            | other day                      |
+  |                                  | .            | today                          |
+  | org-deadline                     | C-c C-d      |                                |
+  | org-goto                         | C-c C-j      |                                |
+  | org-time-stamp                   | C-c .        | <2022-01-18 Tue>               |
+  | org-time-stamp-inactive          | C-c !        | [2022-01-19 Tue]               |
+  | org-date-from-calendar           | C-c <        | <2022-01-20 Tue>               |
+  | org-goto-calendar                | C-c >        |                                |
+  | org-open-at-point                | C-c C-o      | Access the agenda for the date |
+  |                                  |              |                                |
 
 ** reference
    - [[https://orgmode.org/][Org Mode Official WebSite]]
    - [[https://orgmode.org/quickstart.html][Org Mode quick start]]
    - [[https://orgmode.org/guide/][Org Mode guide]]
+   - [The Org Manual](https://orgmode.org/manual/)
+   - [The Org Manual](https://www.gnu.org/software/emacs/manual/html_mono/org.html)
+   - [Exporting from org-mode to markdown](https://emacs.stackexchange.com/questions/4279/exporting-from-org-mode-to-markdown)
+     1) M-x customize-option
+	1) org-export-backends
+	2) Enter
+     2) M-x org-md-export-to-markdown 
 
 * [[https://stackoverflow.com/questions/6874516/relative-line-numbers-in-emacs][Relative Line Numbers In Emacs]]
 
