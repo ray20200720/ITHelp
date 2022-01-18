@@ -1,9 +1,24 @@
 - ASP.NET
     * [ASP.NET Web Form 入門30天](https://ithelp.ithome.com.tw/users/20120056/ironman/2281)
+    - [EF]
+        * [EF三種程式設計方式詳細圖文教程（C#+EF）之Database First](https://www.itread01.com/content/1544434218.html)
+        * [Entity Framework Tutorial](https://www.tutorialspoint.com/entity_framework/index.htm)
+        * [entityframeworktutorial](https://www.entityframeworktutorial.net/)
+        * [Entity Framework 快速上手與學習資源整理](https://blog.miniasp.com/post/2009/03/02/Entity-Framework-Quick-Start-and-Leaning-Resources)
+        * [Entity Framework 6](https://docs.microsoft.com/zh-tw/ef/ef6/)
+        * [用 LINQ 還是自己寫 SQL？](https://blog.darkthread.net/blog/linq-or-direct-sql/)
+
+    - [ADO.NET]
+        * [ADO.NET](https://docs.microsoft.com/zh-tw/dotnet/framework/data/adonet/)
+    
+    - [Visual Studio Project]        
+        * [List of Visual Studio Project Type GUIDs](https://www.codeproject.com/Reference/720512/List-of-Visual-Studio-Project-Type-GUIDs)
+    
 
 - Blazor
     * [使用Blazor 開發經驗blog](https://csharpkh.blogspot.com/2020/11/Blazor-Server-Side-Full-Stack-Case-Study-JavaScript-Story.html)
-    * [入門教學網站](https://www.youtube.com/watch?v=SfXJf7Q3dg4&list=PLUHhEA6x1LH-MTqXJTNElSPkYFTMFHvsi)        
+    * [入門教學網站](https://www.youtube.com/watch?v=SfXJf7Q3dg4&list=PLUHhEA6x1LH-MTqXJTNElSPkYFTMFHvsi)  
+    * [今晚，我想來點Blazor](https://ithelp.ithome.com.tw/users/20130058/ironman/3429?page=3)      
 
 - Chrome
     * [解決Chrome網頁編碼顯示亂碼](https://www.yenchen-design.com/diary/%E8%A7%A3%E6%B1%BAchrome%E7%B6%B2%E9%A0%81%E7%B7%A8%E7%A2%BC%E9%A1%AF%E7%A4%BA%E4%BA%82%E7%A2%BC/)
@@ -47,12 +62,12 @@
 - Linux
     - [Linux学习教程，Linux入门教程](http://c.biancheng.net/linux_tutorial/)
     
-    - command
-        - info
+    - [command]
+        - [info]
             - [介紹一下linux命令info 命令](https://www.gushiciku.cn/pl/gO6O/zh-tw)
             - [Linux info命令](http://c.biancheng.net/view/768.html)
     
-    - shell
+    - [shell]
         - [Shell脚本：Linux Shell脚本学习指南](http://c.biancheng.net/shell/)
 
 - markdown
