@@ -55,3 +55,10 @@
 (global-display-line-numbers-mode 1)
 (setq display-line-numbers-type 'relative)
 #+end_src
+
+* DONE [Emacs] [Swap Control and CapsLock](https://www.emacswiki.org/emacs/MovingTheCtrlKey)
+
+  - In Antix:
+    setxkbmap -option ctrl:swapcaps     # Swap Left Control and Caps Lock
+    setxkbmap -option ctrl:nocaps       # Make Caps Lock a Control key
+* DONE [Emacs] [[https://emacs.stackexchange.com/questions/4279/exporting-from-org-mode-to-markdown][Exporting from org-mode to markdown]]
