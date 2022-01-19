@@ -2,7 +2,7 @@
 #+author: Ray.Kuo
 
 * Basic
-
+  
 ** Hot-key
    - S-Right/Left/Up/Down : select words
    - M-w : [kill-ring-save] copy 
@@ -15,13 +15,17 @@
 
 * How to install evil mode manually 
 
-   git clone --depth 1 https://github.com/emacs-evil/evil.git
+  #+begin_src shell
+  git clone --depth 1 https://github.com/emacs-evil/evil.git
    
-   mkdir ~/.emacs.d/init.el
-   
-   (add-to-list 'load-path "~/Project/ITHelp/SampleCode/Emacs/evil")
-   (require 'evil)
-   (evil-mode 1)
+  mkdir ~/.emacs.d/init.el
+  #+end_src
+  
+  #+begin_src emacs_lisp
+  (add-to-list 'load-path "~/Project/ITHelp/SampleCode/Emacs/evil")
+  (require 'evil)
+  (evil-mode 1)
+  #+end_src
 
 * evil-mode
 
@@ -86,6 +90,7 @@
   | org-date-from-calendar           | C-c <        | <2022-01-20 Tue>               |
   | org-goto-calendar                | C-c >        |                                |
   | org-open-at-point                | C-c C-o      | Access the agenda for the date |
+  | org-export                       | C-c C-e      | export different format file   |
   |                                  |              |                                |
 
 ** reference
@@ -112,7 +117,7 @@
 * Reference
   
   [EMACS-DOCUMENT](http://blog.lujun9972.win/emacs-document/)    
-  [一年成为Emacs高手 (像神一样使用编辑器)](https://github.com/redguardtoo/mastering-emacs-in-one-year-guide/blob/master/guide-zh.org)
-  [Evil](https://evil.readthedocs.io/en/latest/index.html)
-  [MELPA](https://melpa.org/)
-  [EMACS 新思維](https://ithelp.ithome.com.tw/users/20084176/ironman/674?page=1)
+  [一年成为Emacs高手 (像神一样使用编辑器)](https://github.com/redguardtoo/mastering-emacs-in-one-year-guide/blob/master/guide-zh.org)  
+  [Evil](https://evil.readthedocs.io/en/latest/index.html)  
+  [MELPA](https://melpa.org/)  
+  [EMACS 新思維](https://ithelp.ithome.com.tw/users/20084176/ironman/674?page=1)  
