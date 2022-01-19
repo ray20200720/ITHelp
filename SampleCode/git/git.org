@@ -1,0 +1,47 @@
+#+title: git
+
+* [[https://salferrarello.com/git-restore/][git: ‘restore’ is not a git command. See ‘git –help’.]]
+  
+** Old Way
+#+begin_src shell
+git checkout myfile.txt
+#+end_src
+
+** New Way
+#+begin_src shell
+git checkout myfile.txt
+#+end_src
+
+* [[https://blog.csdn.net/iefreer/article/details/7679631][git更新檔案衝突 Please, commit your changes or stash them before you can merge]]
+
+#+begin_src shell
+error: Your local changes to the following files would be overwritten by merge:
+        protected/config/main.php
+Please, commit your changes or stash them before you can merge.
+#+end_src
+
+如果希望保留生產伺服器上所做的改動,僅僅併入新配置項, 處理方法如下:
+
+#+begin_src shell
+git stash
+git pull
+git stash pop
+git add xxx
+git commit -m "comment"
+#+end_src
+
+如果希望用程式碼庫中的檔案完全覆蓋本地工作版本. 方法如下:
+
+#+begin_src shell
+git reset --hard 
+git pull
+#+end_src
+
+其中git reset是針對版本,如果想針對檔案回退本地修改,使用
+
+#+begin_src shell
+git checkout HEAD file/to/restore  
+#+end_src
+
+* Reference
+  - [[https://gitbook.tw][為你自己學 Git]]
