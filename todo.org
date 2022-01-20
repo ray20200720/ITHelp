@@ -4,8 +4,6 @@
 * TODO [ASP.NET] MasterPage.master Error
 <link rel="Stylesheet" href="CommonControl/jquery-ui-1.11.4/jquery-ui.css" />
 
-* TODO [ASP.NET] []
-
 * DONE [ASP.NET] [[https://stackoverflow.com/questions/5217665/how-to-generate-net-4-0-classes-from-xsd][How to generate .NET 4.0 classes from xsd?]]
 
   #+begin_src shell

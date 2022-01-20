@@ -19,11 +19,13 @@
     * [使用Blazor 開發經驗blog](https://csharpkh.blogspot.com/2020/11/Blazor-Server-Side-Full-Stack-Case-Study-JavaScript-Story.html)
     * [入門教學網站](https://www.youtube.com/watch?v=SfXJf7Q3dg4&list=PLUHhEA6x1LH-MTqXJTNElSPkYFTMFHvsi)  
     * [今晚，我想來點Blazor](https://ithelp.ithome.com.tw/users/20130058/ironman/3429?page=3)      
+    * [Blazor client-side and WCF](https://stackoverflow.com/questions/57146331/blazor-client-side-and-wcf)
 
 - Chrome
     * [解決Chrome網頁編碼顯示亂碼](https://www.yenchen-design.com/diary/%E8%A7%A3%E6%B1%BAchrome%E7%B6%B2%E9%A0%81%E7%B7%A8%E7%A2%BC%E9%A1%AF%E7%A4%BA%E4%BA%82%E7%A2%BC/)
     
 - C# 
+    * [C# 文件](https://docs.microsoft.com/zh-tw/dotnet/csharp/)
     * [C#教程：C#入门经典教程](http://c.biancheng.net/csharp/)
     * [C#教程：C#入门经典教程](https://xinbaoku.com/csharp/)
 
@@ -35,10 +37,14 @@
 - Emacs 
 	* [版本控制：Emacs 的 Git 介面 Magit - 1](https://ithelp.ithome.com.tw/articles/10200840)
 
+- Entity Framework
+    * [Database First](https://docs.microsoft.com/zh-tw/ef/ef6/modeling/designer/workflows/database-first)
+    * [開始使用 Entity Framework 6](https://docs.microsoft.com/zh-tw/ef/ef6/get-started?redirectedfrom=MSDN)
 - JavaScript
 	* [讀懂 ECMAScript 規格 ](http://www.ruanyifeng.com/blog/2015/11/ecmascript-specification.html)
 	* [讀懂 ECMAScript 規格 - ECMAScript 6入門](https://es6.ruanyifeng.com/)
 	* [Exploring ES6](https://exploringjs.com/es6/)
+    * [How do I convert an integer to binary in JavaScript?](https://stackoverflow.com/questions/9939760/how-do-i-convert-an-integer-to-binary-in-javascript)
 	
 - FTP
     * [主動式與被動式FTP 差別](http://blog.kenyang.net/2010/10/28/ftp)
@@ -115,7 +121,14 @@
     - sql Injection
         * [ADO.NET 參數寫法 Parameter（避免SQL Injection資料隱碼攻擊）](https://dotblogs.com.tw/mis2000lab/2015/11/26/adonet_parameter_sql_injection_20151126)    
         * [ASP.NET-SQL注入攻击初级实例](https://blog.csdn.net/winycg/article/details/71909305)
-    
+
+- WCF 
+    - [Windows Communication Foundation](https://docs.microsoft.com/zh-tw/dotnet/framework/wcf/)
+    - [What replaces WCF in .Net Core?](https://stackoverflow.com/questions/48522849/what-replaces-wcf-in-net-core)
+
+- Web Service
+    - [Web Service 與 WCF 差異表筆記](https://dotblogs.com.tw/joysdw12/2013/07/25/note-wcf-web-service-difference)    
+
 - Web Server
     * [Day7 - Node.js 內建的 Web Server 介紹及使用](https://ithelp.ithome.com.tw/articles/10185302)
 
@@ -142,7 +155,16 @@
 - Vim
 	* [Vundle](https://github.com/VundleVim/Vundle.vim)
 
+- XML
+    * [Visual Studio 中的 XML 工具總覽](https://docs.microsoft.com/zh-tw/visualstudio/xml-tools/xml-tools-in-visual-studio?view=vs-2022)
+
 - 函數編程
 	* [名詞王國中的死刑](http://steve-yegge.blogspot.com/2006/03/execution-in-kingdom-of-nouns.html)
-
 - [網頁入門](https://bookdown.org/tpemartin/webbasic/)
+- [什麼是架構師（Architect）以及要如何養成？](https://www.bnext.com.tw/article/53336/how-to-become-a-architect)
+- [小朱® 的技術隨手寫](https://www.dotblogs.com.tw/regionbbs)
+    * [ASP.NET 問題解決實戰 全書開放電子檔 - 以及台灣技術書市的警訊](https://www.dotblogs.com.tw/regionbbs/2012/07/30/asp_net_q_and_a_in_practices_available_full_book_for_download)
+    * [架構師 (Architect) 的角色](https://www.dotblogs.com.tw/regionbbs/2020/12/06/architect_role_definition)
+    * [邁向架構師的暖身運動(1)：介面導向設計](https://www.dotblogs.com.tw/regionbbs/2009/05/15/interfaceorienteddesign)
+    * [我的學習之路 Part 1 - 發跡](https://www.dotblogs.com.tw/regionbbs/2008/12/06/6272)
+    * [程式開發領域由菜鳥到老鳥的成長歷程 (3) - 學生階段－選課 (修課) 的重要性](https://www.dotblogs.com.tw/regionbbs/2011/12/15/62118)

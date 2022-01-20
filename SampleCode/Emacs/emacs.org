@@ -114,6 +114,10 @@
    (setq display-line-numbers-type 'relative)
    #+end_src
 
+* Q&A
+  - [[https://stackoverflow.com/questions/60464/changing-the-default-folder-in-emacs][Changing the default folder in Emacs]]
+    The directory that you see with c-x c-f is the cwd, in Emacs terms, the default-directory (a variable).
+    When you start Emacs using an MS Windows shortcut, the default-directory is initially the folder (directory) specified in the [[d:/Ray/MyProject/GitHub/ray20200720/ITHelp/pictures/emacs/startin.png]] field of the shortcut properties. Right click the shortcut, select Properties, and type the path to your desktop in the Start In field.
 * Reference
   
   [EMACS-DOCUMENT](http://blog.lujun9972.win/emacs-document/)    
