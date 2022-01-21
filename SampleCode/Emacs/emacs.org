@@ -53,8 +53,11 @@
     1. in head * : [org-todo]
     2. in list : [org-do-promote/org-do-demote]
     3. in table : [org-table-move-column-left/right]
+    4. in timestamp : Date +/- 1 or Hour +/- 1
+     <2022-01-22 週六>
 
-  | A | B |
+  | A     |
+  |---+---|
   | 1 | 2 |
  
   - M-Enter
@@ -86,6 +89,7 @@
   | org-deadline                     | C-c C-d      |                                |
   | org-goto                         | C-c C-j      |                                |
   | org-time-stamp                   | C-c .        | <2022-01-18 Tue>               |
+  |                                  | C-u C-c .    | <2022-01-21 Fri 09:12>         |
   | org-time-stamp-inactive          | C-c !        | [2022-01-19 Tue]               |
   | org-date-from-calendar           | C-c <        | <2022-01-20 Tue>               |
   | org-goto-calendar                | C-c >        |                                |
