@@ -10,13 +10,7 @@
   xsd your.xsd /classes
   #+end_src
 
-* TODO [Emacs] Emacs + git
-
-* TODO [Emacs] Emacs啟動很慢
-    - [[https://www.zhangjiee.com/topic/emacs/faq.html][Emacs 常见问题]]
-    - [[https://emacs-china.org/t/emacs-windows/18052][Emacs在Windows下啟動非常慢!]]
-    - [[https://zhuanlan.zhihu.com/p/59509596][降低 Emacs 启动时间的高级技术]]
-
+* DONE [ASP.NET] [[https://stackoverflow.com/questions/35280237/how-can-i-change-visual-studios-build-order-for-reflection-based-project-depend][How can I change Visual Studio's build order for reflection based project dependencies?]]
 * DONE [Visual Studio] VS2008 Upgrade to VS2019
     1. modify sln: 
     Microsoft Visual Studio Solution File, Format Version 10.00
@@ -34,10 +28,16 @@
     EndProject
     ITHelp.CheckModule.Filter -> Build Dependencies -> Project Dependencies -> Checked  
     5.Open Workflow2008.csproj then save Workflow2008.sln
+* TODO [Emacs] [[HTTPS://www.gnu.org/software/emacs/manual/eintr.html][An Introduction to Programming in Emacs Lisp]]
+* TODO [Emacs] [[https://www.gnu.org/software/emacs/manual/html_node/elisp/index.html ][Emacs Lisp]]
+* TODO [Emacs] Emacs + git
+
+* TODO [Emacs] Emacs啟動很慢
+    - [[https://www.zhangjiee.com/topic/emacs/faq.html][Emacs 常见问题]]
+    - [[https://emacs-china.org/t/emacs-windows/18052][Emacs在Windows下啟動非常慢!]]
+    - [[https://zhuanlan.zhihu.com/p/59509596][降低 Emacs 启动时间的高级技术]]
 
 * DONE [Emacs] [[https://emacs.stackexchange.com/questions/61997/how-do-i-fix-incomprehensible-buffer-error-when-running-list-packages][How do I fix "incomprehensible buffer" error when running list-packages?]]
-* DONE [ASP.NET] [[https://stackoverflow.com/questions/35280237/how-can-i-change-visual-studios-build-order-for-reflection-based-project-depend][How can I change Visual Studio's build order for reflection based project dependencies?]]
-
 * DONE [Emacs] org mode
   - [[https://orgmode.org/][Org Mode Official WebSite]]
   - [[https://orgmode.org/quickstart.html][Org Mode quick start]]

@@ -74,28 +74,29 @@
   - [org-goto]       : C-c C-j  
   - [org-time-stamp] : C-c .
     
-  | org-todo                         | S-Left/Right | add "TODO" in head             |
-  | org-do-promote/org-do-demote     | S-Left/Right | in list                        |
-  | org-table-move-column-left/right | S-Left/Right | in table                       |
-  | org-open-at-point                | C-c C-o      | open link                      |
-  | org-insert-link                  | C-c C-l      | insert a link                  |
-  | org-todo                         | C-c C-t      | add "TODO"                     |
-  | org-schedule                     | C-c C-s      |                                |
-  |                                  | <            | backward one month             |
-  |                                  | >            | forward one month              |
-  |                                  | ?            | info                           |
-  |                                  | o            | other day                      |
-  |                                  | .            | today                          |
-  | org-deadline                     | C-c C-d      |                                |
-  | org-goto                         | C-c C-j      |                                |
-  | org-time-stamp                   | C-c .        | <2022-01-18 Tue>               |
-  |                                  | C-u C-c .    | <2022-01-21 Fri 09:12>         |
-  | org-time-stamp-inactive          | C-c !        | [2022-01-19 Tue]               |
-  | org-date-from-calendar           | C-c <        | <2022-01-20 Tue>               |
-  | org-goto-calendar                | C-c >        |                                |
-  | org-open-at-point                | C-c C-o      | Access the agenda for the date |
-  | org-export                       | C-c C-e      | export different format file   |
-  |                                  |              |                                |
+  | org-todo                         | S-Left/Right | add "TODO" in head                 |
+  | org-do-promote/org-do-demote     | S-Left/Right | in list                            |
+  | org-table-move-column-left/right | S-Left/Right | in table                           |
+  | org-open-at-point                | C-c C-o      | open link                          |
+  | org-insert-link                  | C-c C-l      | insert a link                      |
+  | org-todo                         | C-c C-t      | add "TODO"                         |
+  | org-schedule                     | C-c C-s      |                                    |
+  |                                  | <            | backward one month                 |
+  |                                  | >            | forward one month                  |
+  |                                  | ?            | info                               |
+  |                                  | o            | other day                          |
+  |                                  | .            | today                              |
+  | org-deadline                     | C-c C-d      |                                    |
+  | org-goto                         | C-c C-j      |                                    |
+  | org-time-stamp                   | C-c .        | <2022-01-18 Tue>                   |
+  |                                  | C-u C-c .    | <2022-01-21 Fri 09:12>             |
+  | org-time-stamp-inactive          | C-c !        | [2022-01-19 Tue]                   |
+  | org-date-from-calendar           | C-c <        | <2022-01-20 Tue>                   |
+  | org-goto-calendar                | C-c >        |                                    |
+  | org-open-at-point                | C-c C-o      | Access the agenda for the date     |
+  | org-export                       | C-c C-e      | export different format file       |
+  | org-version                      |              | Find out which version of org-mode |
+  |                                  |              |                                    |
 
 ** reference
    - [[https://orgmode.org/][Org Mode Official WebSite]]

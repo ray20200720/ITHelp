@@ -1,0 +1,56 @@
+#+title: An Introduction to Programming in Emacs Lisp
+
+1. List Processing
+   1. Lisp Lists
+      #+begin_src elisp
+      '(rose violet daisy buttercup)
+      (+ 2 2)
+      '(this list has (a list inside of it))
+      #+end_src
+      1. Lisp Atoms
+	 #+begin_src elisp
+	 '(this list include "text between quotation marks.")
+	 #+end_src
+      2. Whitespace in Lists
+	 #+begin_src elisp
+	 '(this list
+	 looks like this)
+	 #+end_src
+      3. GNU Emacs Helps You Type Lists
+   2. Run a Program
+	 #+begin_src elisp
+	 (+ 2 2) ;;C-x C-e
+	 #+end_src
+   3. Generate an Error Message
+	 #+begin_src elisp
+	 (this is an unquoted lis)  ;;Generate an Error and press q to quit the debugger
+	 #+end_src
+   4. Symbol Names and Function Definitions
+   5. The Lisp Interpreter
+      1. Byte Compiling
+   6. Evaluation
+      1. Evaluating Inner Lists
+	#+begin_src elisp
+	(+ 2 (+ 3 3)) ;;output 8
+	#+end_src
+   7. variables
+      #+begin_src elisp
+      fill-column  ;;output 70
+      #+end_src
+      1. Error Message for a Symbol Without a Function
+	 #+begin_src elisp
+	 (fill-column)
+	 #+end_src
+   8. Arguments
+   9. Setting the Value of a Variable
+   10. Summary
+
+2. Practicing Evaluation
+   1. Buffer Names
+      (buffer-name)  ;;eintr.org
+      (buffer-file-name) ;;/home/ray/Project/ITHelp/SampleCode/Emacs/eintr.org
+
+(message "Hello World")
+
+#+begin_src elisp
+#+end_src
