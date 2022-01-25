@@ -60,3 +60,13 @@
     setxkbmap -option ctrl:swapcaps     # Swap Left Control and Caps Lock
     setxkbmap -option ctrl:nocaps       # Make Caps Lock a Control key
 * DONE [Emacs] [[https://emacs.stackexchange.com/questions/4279/exporting-from-org-mode-to-markdown][Exporting from org-mode to markdown]]
+
+* DONE [Arch Linux] Arch Linux Python3 install tkinter
+#+begin_src shell
+pacman -S tk
+#+end_src
+
+* DONE [Arch Linux] Arch Linux Firefox Chinese display incorrect
+#+begin_src shell
+pacman -S firefox-i18n-zh-tw
+#+end_src

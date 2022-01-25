@@ -1,5 +1,19 @@
 #+title: git
 
+* git config
+
+#+begin_src shell
+  git config --global user.name "Ray.Kuo"
+  git config --global user.email "ray20200720@gmail.com"
+#+end_src
+
+#+begin_src shell
+  git config --list 
+#+end_src
+
+** Reference
+  - [為你自己學 Git-使用者設定](https://gitbook.tw/chapters/config/user-config)
+
 * [[https://salferrarello.com/git-restore/][git: ‘restore’ is not a git command. See ‘git –help’.]]
   
 ** Old Way
