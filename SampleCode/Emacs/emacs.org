@@ -49,6 +49,8 @@
 * [[https://orgmode.org/][org-mode]]
 
 ** Hot-key
+  - execute python
+    C-c C-c
   - S-Left/Right :
     1. in head * : [org-todo]
     2. in list : [org-do-promote/org-do-demote]
