@@ -1,8 +1,0 @@
-# ch1_1.py
-from tkinter import *
-
-def msgShow():
-    label["text"] = "I love Python"
-    label
-root = Tk()
-root.mainloop()
