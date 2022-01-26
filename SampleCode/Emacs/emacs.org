@@ -127,6 +127,9 @@
   
   [EMACS-DOCUMENT](http://blog.lujun9972.win/emacs-document/)    
   [一年成为Emacs高手 (像神一样使用编辑器)](https://github.com/redguardtoo/mastering-emacs-in-one-year-guide/blob/master/guide-zh.org)  
+  [Mastering Emacs](https://www.masteringemacs.org/reading-guide)
+  [Emacs 來寫程式](https://ithelp.ithome.com.tw/users/20103574/ironman/1883?page=1)
+  [洋蔥部落格](https://blog.onionstudio.com.tw/)
   [Evil](https://evil.readthedocs.io/en/latest/index.html)  
   [MELPA](https://melpa.org/)  
   [EMACS 新思維](https://ithelp.ithome.com.tw/users/20084176/ironman/674?page=1)  
