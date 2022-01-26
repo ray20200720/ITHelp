@@ -134,6 +134,58 @@
 
     <div class="container" style="margin-top:30px">
         <!--------------------------------------------------------------------------------------------------------------->
+        <!-----------[ASP.NET - WCF]Turn off the WCF service host in Visual studio------------------------------------------------------------------------------------------->
+        <div class="card" style="margin-top: 50px;">
+            <div class="card-body">
+                <h5>[ASP.NET - WCF]</h5>
+                <hr>
+                <h3>Turn off the WCF service host in Visual studio</h3>
+                <hr class="myhr-border-4-darkcyan">
+                <p>
+                    unchek checkbox "Start WCF Service Host when debugging another project in the same solution" in WCF options in project settings<br>
+                </p>
+                <h5>Where is the Project Settings and WCF Options in VS 2015?</h5>
+                <p>
+                    In the project that reference your IService Class. Right Click on your project -> Properties -> WCF Options -> Check/Uncheck "Start WCF Service Host when debugging another project in the same solution"                        
+                </p>
+                <h5>WCF Options</h5>
+                <img src="pictures\VisualStudio\WCFOption.PNG" alt="WCF Option">
+                <br>
+                <br>
+                <a href="https://stackoverflow.com/questions/5366229/turn-off-the-wcf-service-host-in-visual-studio" class="btn btn-secondary btn-sm"
+                    target="_blank"> 參考資料
+                </a>
+            </div>
+        </div>
+        <!-----------[ASP.NET - Web Application]HTTP Error 403.14 - Forbidden------------------------------------------------------------------------------------------->
+        <div class="card" style="margin-top: 50px;">
+            <div class="card-body">
+                <h5>[ASP.NET - Web Application]</h5>
+                <hr>
+                <h3>HTTP Error 403.14 - Forbidden</h3>
+                <hr class="myhr-border-4-darkcyan">
+                <p>
+                    adding this into your web.config<br>
+                </p>
+                <h5>Web.Config</h5>
+                <div class="code">
+                    <code class="mycode">
+                        &lt;system.webServer&gt;<br>
+                        &nbsp;&nbsp;&lt;directoryBrowse enabled="true"/&gt;
+                        &lt;/system.webServer&gt;
+                    </code>
+                </div> 
+                <br>
+                <p>
+                    
+                </p>
+                <a href="https://stackoverflow.com/questions/42262993/http-error-403-14-forbidden-with-debug-of-asp-net-web-application" class="btn btn-secondary btn-sm"
+                    target="_blank"> 參考資料
+                </a>
+                <br>
+                
+            </div>
+        </div>
         <!-----------[DBeaver]SQL Editor裡垂直選取------------------------------------------------------------------------------------------->
         <div class="card" style="margin-top: 50px;">
             <div class="card-body">
