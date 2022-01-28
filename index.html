@@ -134,6 +134,27 @@
 
     <div class="container" style="margin-top:30px">
         <!--------------------------------------------------------------------------------------------------------------->
+        <!-----------[log4net]Console如何關閉Debug,只顯示Error,但Log仍要記錄Debug------------------------------------------------------------------------------------------->
+        <div class="card" style="margin-top: 50px;">
+            <div class="card-body">
+                <h5>[log4net]</h5>
+                <hr>
+                <h3>Console如何關閉Debug,只顯示Error,但Log仍要記錄Debug</h3>
+                <hr class="myhr-border-4-darkcyan">
+                <h5>App.Config</h5>
+                <div class="code">
+                    <code class="mycode">
+                        &lt;filter type=&quot;log4net.Filter.LevelRangeFilter&quot;&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;levelMin value=&quot;ERROR&quot; /&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;levelMax value=&quot;FATAL&quot; /&gt;<br>
+                        &lt;/filter&gt;
+                    </code>
+                </div> 
+                <br>
+                <a href="https://www.gushiciku.cn/pl/pWpG/zh-tw" class="btn btn-secondary btn-sm" target="_blank"> 參考資料1 </a>
+                <a href="https://www.itread01.com/content/1548504197.html" class="btn btn-secondary btn-sm" target="_blank"> 參考資料2 </a>
+            </div>
+        </div>
         <!-----------[ASP.NET - WCF]Turn off the WCF service host in Visual studio------------------------------------------------------------------------------------------->
         <div class="card" style="margin-top: 50px;">
             <div class="card-body">

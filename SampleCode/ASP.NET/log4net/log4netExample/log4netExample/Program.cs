@@ -14,6 +14,8 @@ namespace log4netExample
         static void Main(string[] args)
         {
             logger.Info("現在在 Page_Load 中");
+            logger.Error("ERROR");
+            Console.Read();
         }
     }
 }
