@@ -46,11 +46,31 @@
    10. Summary
 
 2. Practicing Evaluation
+   How to Evaluate
+   C-x C-e
    1. Buffer Names
-      (buffer-name)  ;;eintr.org
-      (buffer-file-name) ;;/home/ray/Project/ITHelp/SampleCode/Emacs/eintr.org
+      #+begin_src elisp
+	(buffer-name)  ;;eintr.org
+	(buffer-file-name) ;;/home/ray/Project/ITHelp/SampleCode/Emacs/eintr.org
+      #+end_src
 
-(message "Hello World")
+      #+RESULTS:
+      : /home/ray/Projects/ITHelp/SampleCode/Emacs/eintr.org
 
-#+begin_src elisp
+      C-u C-x -C-e ;;causes the value returned to appear after the expression
+
+   2. Getting Buffers
+      #+begin_src elisp
+	(current-buffer)
+	(other-buffer)
+      #+end_src
+
+      #+RESULTS:
+      : #<buffer *GNU Emacs*>
+
+   3. Switching Buffers
+
+	(message "Hello World")
+
+	,#+begin_src elisp
 #+end_src
