@@ -1,0 +1,160 @@
+#+title: Python GUI tkinter
+#+date: 2022-01-30
+
+* Basic
+  
+** tkinter
+
+   #+begin_src python
+     # ch1_0.py
+     import tkinter
+     print(tkinter.TkVersion)
+   #+end_src
+
+   #+begin_src python
+     # ch1_1.py
+     from tkinter import *
+
+     root = Tk()
+     root.mainloop()
+   #+end_src
+
+   #+begin_src python
+     # ch1_2.py
+     from tkinter import *
+
+     root = Tk()
+     root.title("ITHelp")
+     root.geometry("300x200")
+     root.configure(bg="grey")
+     root.mainloop()
+   #+end_src
+
+   #+begin_src python
+     # ch1_3.py
+     from tkinter import *
+
+     root = Tk()
+     root.title("ITHelp")
+     root.geometry("300x200")
+     root.configure(bg="#00ff00")  # background color
+     root.iconbitmap("ithelp.ico") # icon
+     root.mainloop()
+   #+end_src
+
+   #+begin_src python
+     # ch1_4.py
+     from tkinter import *
+
+     root = Tk()
+     root.title("ITHelp")
+     root.geometry("300x200+400+200") # geometry(WIDTHxHEIGHT+X+Y)
+     root.configure(bg="#00ff00")  # background color
+     root.iconbitmap("ithelp.ico") # icon
+     root.mainloop()
+   #+end_src
+
+   #+begin_src python
+     # ch1_5.py
+     from tkinter import *
+
+     root = Tk()
+     w = 300 
+     h = 200 
+     x = 400 
+     y = 200 
+     root.geometry("%dx%d+%d+%d" % (w, h, x, y)) # geometry(WIDTHxHEIGHT+X+Y)
+     root.mainloop()
+   #+end_src
+
+   #+begin_src python
+     # ch1_6.py
+     from tkinter import *
+
+     root = Tk()
+     root.title("ITHelp")
+     screenWidth = root.winfo_screenwidth()
+     screenHeight = root.winfo_screenheight()
+     w = 300 
+     h = 200 
+     x = 400 
+     y = 200 
+     root.geometry("%dx%d+%d+%d" % (w, h, x, y)) # geometry(WIDTHxHEIGHT+X+Y)
+     root.mainloop()
+   #+end_src
+   
+** labl
+
+   #+begin_src python
+     # ch2_1.py
+     import tkinter
+     print(tkinter.TkVersion)
+   #+end_src
+   
+** button
+   
+** layout
+
+*** pack
+   
+    #+begin_src python
+      # pack.py
+      import tkinter as tk
+      win = tk.Tk()
+      win.geometry("300x200") 
+      win.title("pack") 
+
+      btn1 = tk.Button(win, width=25, text="Button 1")
+      btn1.pack()
+      btn2 = tk.Button(win, width=25, text="Button 2")
+      btn2.pack()
+      btn3 = tk.Button(win, width=25, text="Button 3")
+      btn3.pack()
+
+      win.mainloop()
+    #+end_src
+   
+*** grid 
+
+   #+begin_src python
+     # grid.py
+     import tkinter as tk
+     win = tk.Tk()
+     win.geometry("650x200") 
+     win.title("grid") 
+
+     btn1 = tk.Button(win, width=25, text="Button 1")
+     btn1.grid(column=0, row=0)
+     btn2 = tk.Button(win, width=25, text="Button 2")
+     btn2.grid(column=1, row=0)
+     btn3 = tk.Button(win, width=25, text="Button 3")
+     btn3.grid(column=2, row=0)
+
+     btn4 = tk.Button(win, width=25, text="Button 4")
+     btn4.grid(column=0, row=1)
+     btn5 = tk.Button(win, width=25, text="Button 5")
+     btn5.grid(column=1, row=1)
+     btn6 = tk.Button(win, width=25, text="Button 6")
+     btn6.grid(column=2, row=1)
+
+     win.mainloop()
+   #+end_src
+
+*** place 
+
+   #+begin_src python
+     # place.py
+     import tkinter as tk
+     win = tk.Tk()
+     win.geometry("650x200") 
+     win.title("place") 
+
+     btn1 = tk.Button(win, width=25, text="Button 1")
+     btn1.place(x=0, y=0)
+     btn2 = tk.Button(win, width=25, text="Button 2")
+     btn2.place(relx=0.5, rely=0.5, anchor="center")
+     btn3 = tk.Button(win, width=25, text="Button 3")
+     btn3.place(relx=0.5, rely=0.7)
+
+     win.mainloop()
+   #+end_src
