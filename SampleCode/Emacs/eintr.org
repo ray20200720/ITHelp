@@ -70,7 +70,7 @@
 
    3. Switching Buffers
 
-	(message "Hello World")
-
-	,#+begin_src elisp
+#+begin_src elisp
+  (switch-to-buffer (other-buffer)) 
+  (switch-to-buffer (other-buffer (current-buffer) t)) 
 #+end_src
