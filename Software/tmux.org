@@ -1,0 +1,11 @@
+#+title: tmux
+#+date:	 2022-Jan-31
+
+* hot-key
+| C-b %          | 垂直分割視窗                                   |
+| C-b "          | 水平分割視窗                                   |
+| C-b o          | 以輪流方式輪流切換 pane                        |
+| C-b left/right | 切換至指定方向的 pane                          |
+| C-b space      | 切換佈局                                       |
+| C-b x          | 關閉目前的 pane                                |
+| C-b !          | 將目前的 pane 抽出來，獨立建立一個 window 視窗 |

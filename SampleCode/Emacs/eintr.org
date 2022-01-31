@@ -1,7 +1,7 @@
 #+title: An Introduction to Programming in Emacs Lisp
 
-1. List Processing
-   1. Lisp Lists
+* 1. List Processing
+** 1.1 Lisp Lists
       #+begin_src elisp
       '(rose violet daisy buttercup)
       (+ 2 2)
@@ -17,6 +17,18 @@
 	 looks like this)
 	 #+end_src
       3. GNU Emacs Helps You Type Lists
+      4. 
+      5. 
+      6. 
+      7. 
+      8. Arguments 
+	 #+begin_src elisp
+	   (+ 2 2)
+	 #+end_src 
+
+	 #+RESULTS:
+	 : 4
+	 
    2. Run a Program
 	 #+begin_src elisp
 	 (+ 2 2) ;;C-x C-e
@@ -45,10 +57,10 @@
    9. Setting the Value of a Variable
    10. Summary
 
-2. Practicing Evaluation
+* 2. Practicing Evaluation
    How to Evaluate
    C-x C-e
-   1. Buffer Names
+** 2.1 Buffer Names
       #+begin_src elisp
 	(buffer-name)  ;;eintr.org
 	(buffer-file-name) ;;/home/ray/Project/ITHelp/SampleCode/Emacs/eintr.org
@@ -59,7 +71,7 @@
 
       C-u C-x -C-e ;;causes the value returned to appear after the expression
 
-   2. Getting Buffers
+** 2.2 Getting Buffers
       #+begin_src elisp
 	(current-buffer)
 	(other-buffer)
@@ -68,9 +80,60 @@
       #+RESULTS:
       : #<buffer *GNU Emacs*>
 
-   3. Switching Buffers
-
+** 2.3 Switching Buffers
 #+begin_src elisp
   (switch-to-buffer (other-buffer)) 
   (switch-to-buffer (other-buffer (current-buffer) t)) 
 #+end_src
+
+* 3. Writing Defuns
+   
+** 3.1 The 'defun' Macro
+      (mark-whole-buffer)
+
+      (defun multiply-by-seven (number)
+       "Multiply NUMBER by seven."
+        (* 7 number))
+
+      (multiply-by-seven 3)
+
+** 3.2 Install a Function Definition 
+   
+*** 3.2.1 Change a Function Definition
+
+     (defun multiply-by-seven (number)       ; Second version.
+       "Multiply NUMBER by seven."
+       (+ number number number number number number number))
+
+** 3.3 Make a Function Interactive       
+
+       #+begin_src elisp 
+	 (defun multiply-by-seven (number)       ; Interactive version.
+	   "Multiply NUMBER by seven."
+	   (interactive "p")
+	   (message "The result is %d" (* 7 number)))
+       #+end_src
+
+       #+begin_src bash
+	 C-x C-e
+	 C-u 3 ; M-3
+	 M-x multiply-by-seven  
+       #+end_src
+
+*** 3.3.1 An Interactive 'multiply-by-seven'
+
+       #+begin_src elisp 
+		  (defun multiply-by-seven (number)       ; Interactive version.
+		    "Multiply NUMBER by seven."
+		    (interactive "p") ; The "p" tells Emacs to pass the prefix argument to the function and use its value for the argument of the function.
+		    (message "The result is %d" (* 7 number)))
+       #+end_src
+
+** 3.4 Different Options for 'interactive'
+   
+       #+begin_src elisp 
+	 (zap-to-char)
+	 (interactive "p\ncZap to char: ")
+       #+end_src
+
+

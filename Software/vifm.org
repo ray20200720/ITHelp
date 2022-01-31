@@ -1,0 +1,30 @@
+#+title: vifm
+#+date: 2022-Jan-31
+
+* hot-key
+  | :q    |     | quit vifm                                                                 |
+  | tab   |     | change frame                                                              |
+  | j/k   |     | move up/down                                                              |
+  | l/h   |     | enter/exit folder                                                         |
+  | gg    |     | goto top                                                                  |
+  | G     |     | goto bottom                                                               |
+  | 'h    |     | goto ~/                                                                   |
+  | C-w s |     | display panel horizontally                                                |
+  | C-w v |     | display panel vertically                                                  |
+  | C-w o |     | display only one panel                                                    |
+  |       | tab | change panel                                                              |
+  | :sp   |     |                                                                           |
+  | :vs   |     |                                                                           |
+  | :only |     |                                                                           |
+  | enter |     | use vim to edit file                                                      |
+  | e     |     | preview file                                                              |
+  | :view |     | set right window to see content of dir or file highlighted in left window |
+
+* open two directory
+
+  #+begin_src bash
+  vifm ~/ /etc/
+  #+end_src
+
+* Reference
+  - [vifm: How to set right window to see content of dir or file highlighted in left window](https://superuser.com/questions/455044/vifm-how-to-set-right-window-to-see-content-of-dir-or-file-highlighted-in-left)

@@ -37,6 +37,7 @@
    #+RESULTS:
    : 3
 
+
 * DataType Conversion
 ** int()
    #+begin_src python :results output
@@ -67,6 +68,83 @@
 
    #+RESULTS:
    : output is 10.3
+
+
+* Dictionary
+** Create Dictionary  
+   { key: value }
+#+begin_src python :results output
+person = {'name':'Ray', 'age': 40, 'job':'software engineer'}
+print(person['name'])
+print(person['age'])
+print(person['job'])
+#+end_src
+
+#+RESULTS:
+: Ray
+: 40
+: software engineer
+
+** Using a dictionary
+#+begin_src python :results output
+person = {'name':'Ray', 'age': 40}
+print(person)
+person['job']='software engineer' # add key job:value software engineer
+print(person['job'])
+print(person)
+#+end_src
+
+#+RESULTS:
+: {'name': 'Ray', 'age': 40}
+: software engineer
+: {'name': 'Ray', 'age': 40, 'job': 'software engineer'}
+
+#+begin_src python :results output
+  person = {'name':'Ray', 'age': 40}
+  print(person)
+  del person['age'] # delete key 'age'
+  print(person)
+#+end_src
+
+#+RESULTS:
+: {'name': 'Ray', 'age': 40}
+: {'name': 'Ray'}
+
+#+begin_src python :results output
+  person = {'name':'Ray', 'age': 40}
+  print(person)
+  del person # delete dictionary person 
+  print(person) # NameError: name 'person' is not defined
+#+end_src
+
+#+begin_src python :results output
+  person = {'name':'Ray', 'age': 40}
+  print(list(person))
+#+end_src
+
+#+RESULTS:
+: ['name', 'age']
+
+#+begin_src python :results output
+  person = {'name':'Ray', 'age': 40}
+  print(sorted(person))
+#+end_src
+
+#+RESULTS:
+: ['age', 'name']
+
+#+begin_src python :results output
+  person = {'name':'Ray', 'age': 40}
+  print('name' in person) # True
+  print('age' not in person) # False
+#+end_src
+
+#+RESULTS:
+: True
+: False
+
+
+
 
 * Operator
 #+begin_src python :results output
