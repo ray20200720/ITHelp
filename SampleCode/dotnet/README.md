@@ -52,4 +52,13 @@ Install
 [Create a web UI with ASP.NET Core](https://docs.microsoft.com/en-us/learn/modules/create-razor-pages-aspnet-core/)
 ---------------------------------
 
+[.NET CLI](https://docs.microsoft.com/zh-tw/dotnet/core/tools/)
+
+# 基本命令
+## new
+## restore
+## build
+## publish
+## run
+
 
