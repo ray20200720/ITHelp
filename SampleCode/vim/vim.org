@@ -1,5 +1,10 @@
 #+title: vim
-
+* [vm] 
+** Key
+   - sp: split
+   - vs: vertical split
+   - C-q: change to another panel 
+ 
 * [Firefox] Vimium C
 
 ** Key
