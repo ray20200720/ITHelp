@@ -1,6 +1,20 @@
 #+title Python
 
 * Function
+** print()
+   #+begin_src python :results output
+     # print(value, ..., sep='', end='\n', file=sys.stuout, flush=False)
+     print(1, 2, 3)
+     print(127, 0, 0, 1, sep=".") 
+     print(1, 2, 3, sep="|", end=' ') 
+     print(4, 5, 6, sep="~") 
+   #+end_src
+
+   #+RESULTS:
+   : 1 2 3
+   : 127.0.0.1
+   : 1|2|3 4~5~6
+
 ** format()
    #+begin_src python :results output
      print("{} is a student.".format("Ray"))
@@ -68,6 +82,28 @@
 
    #+RESULTS:
    : output is 10.3
+
+
+* Logical Operator
+** and
+   #+begin_src python :results output
+     a = 10
+     b = 20
+     print(a < b and a != b)
+   #+end_src
+
+   #+RESULTS:
+   : True
+
+** or
+   #+begin_src python :results output
+     a = 10
+     b = 20
+     print(a < b or a == b)
+   #+end_src
+
+   #+RESULTS:
+   : True
 
 
 * Dictionary
@@ -189,3 +225,54 @@ print("a={0}".format(a, b))
 : a=8.0
 : a=4.0
 : a=1.0
+
+
+* String
+** compare
+#+begin_src python :results output
+print('快樂' > 'Happy')
+print('Happy Birthday' < 'happy birthday')
+print('abc' > 'ABC' > '123')
+print('HAPPY' == 'happy')
+#+end_src
+
+#+RESULTS:
+: True
+: True
+: True
+: False
+
+** in/not in
+#+begin_src python :results output
+str = 'happy'
+print('y' in str)
+print('0' in str)
+print('0' not in str)
+#+end_src
+
+#+RESULTS:
+: True
+: False
+: True
+
+** len()
+#+begin_src python :results output
+str = 'The first wealth is health\u266C'
+print("{} length is {}".format(str, len(str)))
+#+end_src
+
+#+RESULTS:
+: The first wealth is health♬ length is 27
+
+#+begin_src python :results output
+str1 = 'Do one thing at a time!'
+str2 = str1[13:]
+str_w = len(str2)
+print("取出字串=[{}],長度：{}".format(str2, str_w))
+#+end_src
+
+#+RESULTS:
+: 取出字串=[at a time!],長度：10
+
+
+
