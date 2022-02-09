@@ -61,6 +61,41 @@
     setxkbmap -option ctrl:nocaps       # Make Caps Lock a Control key
 * DONE [Emacs] [[https://emacs.stackexchange.com/questions/4279/exporting-from-org-mode-to-markdown][Exporting from org-mode to markdown]]
 
+* TODO [Arch Linux] [Create a Sudo User on Arch Linux](https://www.vultr.com/docs/create-a-sudo-user-on-arch-linux/)
+  1. Install sudo
+     #+begin_src bash
+     # pacman --sync sudo
+     #+end_src
+  2. Add a New User Account
+     #+begin_src bash
+     # useradd --create-home example_user
+     # passwd example_user
+     #+end_src
+  3. Add the User to the Wheel Group
+     #+begin_src bash
+     # usermod --append --groups wheel example_user
+     #+end_src
+  4. Edit Sudoers File
+     #+begin_src bash
+     # visudo
+     #+end_src
+     ## Uncomment to allow members of group wheel to execute any command
+     %wheel ALL=(ALL) ALL
+  5. Test
+     #+begin_src bash
+       $ su - example_user
+       $ whoami
+       example_user
+       $ sudo whoami
+     #+end_src
+
+* TODO [Arch Linux] [visudo: no editor found(editor path= /usr/bin)](https://spuder.wordpress.com/2012/05/25/visudo-no-editor-foundeditor-path-usrbin/]   
+** Create default editor
+     #+begin_src bash
+     # vim /etc/sudoers
+     Defaults editor=/usr/bin/vim
+     #+end_src
+
 * DONE [Arch Linux] Arch Linux Python3 install tkinter
 #+begin_src shell
 pacman -S tk
