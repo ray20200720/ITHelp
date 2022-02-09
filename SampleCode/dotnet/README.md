@@ -49,6 +49,16 @@ Install
 `dotnet watch`
 
 
+[Create Blazor Application](https://dotnet.microsoft.com/en-us/learn/aspnet/blazor-tutorial/create) 
+-----------------------------------------------------------------------------------------------------
+
+`dotnet new blazorserver -o BlazorApp --no-https`
+
+`cd BlazorApp`
+
+`dotnet watch`
+
+
 [Create a web UI with ASP.NET Core](https://docs.microsoft.com/en-us/learn/modules/create-razor-pages-aspnet-core/)
 ---------------------------------
 
