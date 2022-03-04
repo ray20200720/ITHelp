@@ -58,6 +58,15 @@ Install
 
 `dotnet watch`
 
+[练习 - 创建并运行 Blazor Web 应用](https://docs.microsoft.com/zh-cn/learn/modules/build-blazor-webassembly-visual-studio-code/3-exercise-configure-enviromnent?WT.mc_id=DT-MVP-5004174)
+-----------------------------------------------------------------------------------------------------
+
+`dotnet --list-sdks`
+
+`dotnet new blazorserver -f net6.0`
+
+`dotnet watch run`
+
 
 [Create a web UI with ASP.NET Core](https://docs.microsoft.com/en-us/learn/modules/create-razor-pages-aspnet-core/)
 ---------------------------------
