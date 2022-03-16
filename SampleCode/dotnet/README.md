@@ -81,3 +81,14 @@ Install
 ## run
 
 
+* MudBlazor
+
+** install
+
+`dotnet new --install MudBlazor.Templates`
+
+** create new project
+
+`dotnet new mudblazor --host wasm --name MyApplication`
+
+** 
