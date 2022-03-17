@@ -1,10 +1,5 @@
 import java.util.Hashtable;
-/**
- * Write a description of class ShapeCache here.
- *
- * @author (your name)
- * @version (a version number or a date)
- */
+
 public class ShapeCache
 {
     private static Hashtable<String, Shape> shapeMap = new Hashtable<String, Shape>();
