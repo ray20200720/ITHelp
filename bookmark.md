@@ -115,6 +115,14 @@
     * [Everyone Hates systemd](https://betterprogramming.pub/why-most-linux-users-hate-systemd-c591eef3d034)
 
 - SQL
+    - SQL 語法
+        *  [SQL Server Tutorial](https://www.sqlservertutorial.net/)
+        *  [SQL Tutorial](https://www.w3schools.com/sql/default.asp)
+        *  [SQL語法教學](https://www.1keydata.com/tw/sql/sql.html)
+        *  [SQL教學](https://www.fooish.com/sql/)
+        *  [SQL教程](https://www.runoob.com/sql/sql-tutorial.html)
+        *  [SQL教程](https://www.w3cschool.cn/sq)
+        
     - sql 取出各種類的第一筆
         * [請問如何取每一群組的第一筆](https://social.msdn.microsoft.com/Forums/zh-TW/ab272284-293e-41a2-af1d-88f3db4bea0d/35531218392291420309214622759919968326763206830340315321996831?forum=240)
 
