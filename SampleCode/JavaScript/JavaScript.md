@@ -1,3 +1,33 @@
+* JS多個檔案定義了相同名稱但不同參數類型或不同參數個數的方法,JS不是根據參數個數決定要調用的方法.
+  而是用後蓋前,後面引用的js的方法會蓋掉前面引用的js的方法
+    實例:
+    a.js
+    `function doSomething(filename) {           `
+    `    alert("Hi, I'm from a.js" + filename); `
+    `}                                          `
+    
+    b.js
+    `function doSomething(filename, type) {     `
+    `    alert("Hi, I'm from b.js" + filename); `
+    `}                                          `
+
+    index.html
+    <html>
+    <head>
+    <script src="a.js"></script>
+    <script src="b.js"></script>
+    </head>
+    <body>
+    <script>
+        doSomething('pass a');
+    </script>
+    </body>
+    </html>
+
+    結論:
+        畫面會顯示Hi, I'm from b.js pass a
+
+
 * JS的几种关键词的查找方法
     1. `var i = str.indexOf("关键词",开始位置)`
         在str中，从“开始位置”开始，查找下一个“关键词”的位置
