@@ -1,3 +1,20 @@
+* [如何在 T-SQL 中宣告變數](https://ithelp.ithome.com.tw/articles/10009411)
+
+DECLARE @count int, @x int, @y nvarchar(10)
+
+-- 檢查變數的初始值
+SELECT [@count] = @count, [@x] = @x, [@y] = @y
+
+-- 使用 SET 指派值
+SET @count = 1
+
+-- 使用 SELECT 指派值
+SELECT @x = 0, @y = 'alexc'
+
+-- 檢查變數的設定值
+SELECT [@count] = @count, [@x] = @x, [@y] = @y
+
+
 * [刪除整個資料表，使用Delete、Truncate Table與Drop Table的差異](https://byron0920.pixnet.net/blog/post/85759990)
 
 許多情況下，我們需要刪除整個資料表內的資料，重新輸入新資料，有三種方法可以參考使用，分別是使用Delete、Trancate與Drop，那使這三種方式的差異為何呢?
