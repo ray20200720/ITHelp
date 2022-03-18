@@ -1,3 +1,6 @@
+* SQL語法
+- [SQL Server DATEDIFF() 日期相減](https://www.fooish.com/sql/sql-server-datediff-function.html)
+
 * [如何在 T-SQL 中宣告變數](https://ithelp.ithome.com.tw/articles/10009411)
 
 DECLARE @count int, @x int, @y nvarchar(10)
