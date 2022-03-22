@@ -1,7 +1,22 @@
-* SQL語法
-- [SQL Server DATEDIFF() 日期相減](https://www.fooish.com/sql/sql-server-datediff-function.html)
+# SQL Server 定序 (Collation)
 
-* [如何在 T-SQL 中宣告變數](https://ithelp.ithome.com.tw/articles/10009411)
+分為以下幾類
+- Case sensitivity(CS) : 區分大小寫，A跟a是不同的
+- Accent sensitivity(AS) : 腔調上的差別，a跟a、o跟o在腔調上是相同的，那查詢時是要視為相同.如果是的話，那就是Accent Insensitive(AI)，如果不是的話就視為Accent sensitive。
+- Kana Sensitivity(KS) :日文中的片假名(Hiragana)與平假名(Katakana)如果被視為相同.那就是Kana Insensitive(KI)，反之就是Kana sensitive.。
+- Width sensitivity(WS) :當半形字與全型自被視為相同(A跟Ａ)，那就是Width Insensitive(WI),反之就是Width sensitive。
+
+Chinese_Taiwan_Stroke_CS_AS: 表示設定的是"繁體中文"而且【區分大小寫】
+
+## 參考資料
+
+- [SQL Server 資料庫的定序(Collation)](https://dotblogs.com.tw/erictsaiblog/2015/03/31/150902)
+
+# SQL語法
+
+## [SQL Server DATEDIFF() 日期相減](https://www.fooish.com/sql/sql-server-datediff-function.html)
+
+## [如何在 T-SQL 中宣告變數](https://ithelp.ithome.com.tw/articles/10009411)
 
 DECLARE @count int, @x int, @y nvarchar(10)
 
@@ -18,7 +33,7 @@ SELECT @x = 0, @y = 'alexc'
 SELECT [@count] = @count, [@x] = @x, [@y] = @y
 
 
-* [刪除整個資料表，使用Delete、Truncate Table與Drop Table的差異](https://byron0920.pixnet.net/blog/post/85759990)
+## [刪除整個資料表，使用Delete、Truncate Table與Drop Table的差異](https://byron0920.pixnet.net/blog/post/85759990)
 
 許多情況下，我們需要刪除整個資料表內的資料，重新輸入新資料，有三種方法可以參考使用，分別是使用Delete、Trancate與Drop，那使這三種方式的差異為何呢?
 
