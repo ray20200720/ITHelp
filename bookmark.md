@@ -163,6 +163,13 @@
 - Vim
 	* [Vundle](https://github.com/VundleVim/Vundle.vim)
 
+- VSCode
+    - Extensions
+        - markdown
+            * [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
+        - Java
+            * [Java Extension Pack](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack)
+            
 - XML
     * [Visual Studio 中的 XML 工具總覽](https://docs.microsoft.com/zh-tw/visualstudio/xml-tools/xml-tools-in-visual-studio?view=vs-2022)
 
