@@ -2,18 +2,22 @@
 
 void Main()
 {
-	var lst = new List<string>(){"yao"};
-	var tmptable = getTmptable(); 
-	var tmpret = from a in tmptable.AsEnumerable()
-                              from b in lst
-                              where a.Field<string>("Name").ToUpper().Contains(b.ToUpper())
-                              select a;
-
-	tmpret.Dump();                    
+	{
+        var query = GetConsumerTable();
+        query.Dump("原始資料");
+    }
+    
+    {
+        var query = from row in GetConsumerTable().AsEnumerable()
+                    where row.Field<string>("Name").Length > 4
+                    select row ;
+                    
+        query.Dump();
+    }
 }
 
 // Define other methods and classes here
-public DataTable getTmptable()
+public DataTable GetConsumerTable()
 {
     DataTable table = new DataTable();
     table.Columns.Add("Id");
