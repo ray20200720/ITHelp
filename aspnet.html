@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>ITHelp</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>ITHelp</title>
+    <style>
+        .fakeimg {
+            height: 200px;
+            background: #aaa;
+        }
+
+        .jumbotron {
+            padding-top: 1em;
+            padding-bottom: 1em;
+        }
+
+        .mycode {
+            background-color: black;
+            color: white;
+            padding-top: 0.5em;
+            padding-bottom: 0.5em;
+            padding-left: 0.1em;
+        }
+
+        .code {
+            font-size: 18px;
+            padding: 10px;
+            text-align: left;
+            background: black;
+            color: white;
+            border: 2px solid #e0e0e0;
+            border-radius: 3px;
+            margin: 15px 0 0;
+        }
+
+        .shell {
+            font-size: 18px;
+            color: green;
+        }
+
+        .shell-slash {
+            color: blue;
+        }
+
+        .title {
+            text-decoration: underline;
+        }
+
+        .mycard {
+            font-size: 18px;
+            padding: 10px;
+            text-align: left;
+            background: #fafafa;
+            border: 2px solid #e0e0e0;
+            border-radius: 3px;
+            margin: 15px 0 0;
+        }
+
+        .myhr {
+            border: 0.1px solid
+        }
+
+        .myhr-border-2 {
+            border: 2px solid black;
+        }
+
+        .myhr-border-4 {
+            border: 4px solid black;
+        }
+
+        .myhr-border-4-blue {
+            border: 4px solid blue;
+        }
+
+        .myhr-border-4-lightblue {
+            border: 4px solid #2196f3;
+        }
+
+        .myhr-border-4-darkcyan {
+            border: 4px solid darkcyan;
+        }
+
+        body {
+            background-color: #999999;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="jumbotron text-center" style="margin-bottom:0"> -->
+    <!-- <h1>ITHelp</h1> -->
+    <!-- The information that might help you. -->
+    <!-- <p>The information that might help you.</p> -->
+    <!-- </div> -->
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <a class="navbar-brand" href="#">ITHelp</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">HTML</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">CSS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">JavaScript</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="aspnet.html">ASP.NET</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="IIS.html">IIS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">SQL</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Tools</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container" style="margin-top:30px">
+        <!--------------------------------------------------------------------------------------------------------------->
+        <!-----------[ASP.NET - WCF]Turn off the WCF service host in Visual studio------------------------------------------------------------------------------------------->
+        <div class="card" style="margin-top: 50px;">
+            <div class="card-body">
+                <h5>[ASP.NET - WCF]</h5>
+                <hr>
+                <h3>Turn off the WCF service host in Visual studio</h3>
+                <hr class="myhr-border-4-darkcyan">
+                <p>
+                    unchek checkbox "Start WCF Service Host when debugging another project in the same solution" in WCF options in project settings<br>
+                </p>
+                <h5>Where is the Project Settings and WCF Options in VS 2015?</h5>
+                <p>
+                    In the project that reference your IService Class. Right Click on your project -> Properties -> WCF Options -> Check/Uncheck "Start WCF Service Host when debugging another project in the same solution"                        
+                </p>
+                <h5>WCF Options</h5>
+                <img src="pictures\VisualStudio\WCFOption.PNG" alt="WCF Option">
+                <br>
+                <br>
+                <a href="https://stackoverflow.com/questions/5366229/turn-off-the-wcf-service-host-in-visual-studio" class="btn btn-secondary btn-sm"
+                    target="_blank"> 參考資料
+                </a>
+            </div>
+        </div>
+
+        <!-----------[ASP.NET - Web Application]HTTP Error 403.14 - Forbidden------------------------------------------------------------------------------------------->
+        <div class="card" style="margin-top: 50px;">
+            <div class="card-body">
+                <h5>[ASP.NET - Web Application]</h5>
+                <hr>
+                <h3>HTTP Error 403.14 - Forbidden</h3>
+                <hr class="myhr-border-4-darkcyan">
+                <p>
+                    adding this into your web.config<br>
+                </p>
+                <h5>Web.Config</h5>
+                <div class="code">
+                    <code class="mycode">
+                        &lt;system.webServer&gt;<br>
+                        &nbsp;&nbsp;&lt;directoryBrowse enabled="true"/&gt;
+                        &lt;/system.webServer&gt;
+                    </code>
+                </div> 
+                <br>
+                <p>
+                    
+                </p>
+                <a href="https://stackoverflow.com/questions/42262993/http-error-403-14-forbidden-with-debug-of-asp-net-web-application" class="btn btn-secondary btn-sm"
+                    target="_blank"> 參考資料
+                </a>
+                <br>
+                
+            </div>
+        </div>
+
+        <!----------[ASP.NET]增加以下siteMap設定是因為測試Server上的machine.config設定了MySqlSiteMapProvider會導致default.aspx頁面報錯-->
+        <div class="card" style="margin-top: 50px;">
+            <div class="card-body">
+                <h5>[ASP.NET]</h5>
+                <hr>
+                <h3>解決"Unable to connect to any of the specified MySQL hosts."錯誤</h3>
+                <hr class="myhr-border-4-darkcyan">
+                <p>
+                    錯誤發生是因為在頁面(ex:default.aspx)有用到ASP.NET的控件SiteMap,會先去讀取Web.Config裡關於siteMap的設定.
+                    當Web.Config找不到siteMap設定時,會轉往machine.config找siteMap的設定,但machine.config內的MySqlSiteMapProvider設定是無法正常執行,導致報錯.<br><br>
+                    有2個解決方法:<br>
+                    方法1: 註解掉machine.config內關於siteMap的設定<br>
+                    方法2: Web.Config增加siteMap設定,且必須設定defaultProvider,在providers先clear.(如下)
+                </p>
+                <h5>Web.Config</h5>
+                <div class="code">
+                    <code class="mycode">
+                        &lt;siteMap defaultProvider=&quot;PageSiteMap&quot;&gt;<br>
+                        &lt;providers&gt;<br>
+                        &nbsp;&lt;clear/&gt;<br>
+                        &nbsp;&lt;add name=&quot;PageSiteMap&quot; type=&quot;System.Web.XmlSiteMapProvider&quot; siteMapFile=&quot;~/Web.sitemap&quot; /&gt;<br>
+                        &lt;/providers&gt;<br>
+                        &lt;/siteMap&gt;
+                    </code>
+                </div> 
+                <br>
+                <p>
+                    
+                </p>
+                <a href="https://matol.net/Blog/BlogContent/a1dbcee9-e553-4a56-9cf1-dd76c4948f4f" class="btn btn-secondary btn-sm"
+                    target="_blank"> 參考資料
+                </a>
+                <a href="https://stackoverflow.com/questions/46424555/strange-mysqlsitemapprovider-error-although-xmlsitemapprovider-is-being-used" class="btn btn-secondary btn-sm"
+                target="_blank"> 參考資料
+                </a>
+                <a href="https://stackoverflow.com/questions/32944070/asp-net-cannot-find-mysql-host-even-though-im-not-using-mysql" class="btn btn-secondary btn-sm"
+                    target="_blank"> 參考資料
+                </a>
+                <a href="https://stackoverflow.com/questions/38600679/getting-error-unable-to-connect-to-any-of-the-specified-mysql-hosts-in-an-ap" class="btn btn-secondary btn-sm"
+                target="_blank"> 參考資料
+                </a>
+                <a href="https://www.twblogs.net/a/5b8913072b71775d1cdfba2c" class="btn btn-secondary btn-sm"
+                target="_blank"> 參考資料
+                </a>
+                <a href="https://welkingunther.pixnet.net/blog/post/27986900" class="btn btn-secondary btn-sm"
+                target="_blank"> 參考資料
+                </a>
+                <a href="https://dotblogs.com.tw/lolota/2008/04/10/2792" class="btn btn-secondary btn-sm"
+                target="_blank"> 參考資料
+                </a>
+                <br>
+                
+            </div>
+        </div>
+		
+        <!----------[ASP.NET] TreeView Sample --------------------------------------------------------------------------->
+		<div class="card" style="margin-top: 50px;">
+            <div class="card-body">
+                <h5>[ASP.NET]</h5>
+                <hr>
+                <h3>TreeView Sample</h3>
+                <hr class="myhr-border-4-darkcyan">
+                
+                <div class="code">
+                    <code class="mycode">
+                    &lt;div&gt; <br>
+					&lt;asp:TreeView ID=&quot;TreeView1&quot; runat=&quot;server&quot;&gt; <br>
+					 		&lt;Nodes&gt; <br>
+					 			&lt;asp:TreeNode Text=&quot;Home&quot; NavigateUrl=&quot;~/Home.aspx&quot; Target=&quot;_blank&quot; /&gt; <br>
+								&lt;asp:TreeNode Text=&quot;Employee&quot; NavigateUrl=&quot;~/Employee.aspx&quot; Target=&quot;_blank&quot; /&gt; <br>
+								&lt;asp:TreeNode Text=&quot;Upload Resume&quot; NavigateUrl=&quot;~/Upload_Resume.aspx&quot; Target=&quot;_blank&quot; /&gt; <br>
+								&lt;asp:TreeNode Text=&quot;Edit Resume&quot; NavigateUrl=&quot;~/Edit_Resume.aspx&quot; Target=&quot;_blank&quot; /&gt; <br>
+								&lt;asp:TreeNode Text=&quot;View Resume&quot; NavigateUrl=&quot;~/View_Resume.aspx&quot; Target=&quot;_blank&quot; /&gt; <br>
+								&lt;asp:TreeNode Text=&quot;Employer&quot; NavigateUrl=&quot;~/Employer.aspx&quot; Target=&quot;_blank&quot;&gt; <br>
+									&lt;asp:TreeNode Text=&quot;Upload Job&quot; NavigateUrl=&quot;~/Upload_Job.aspx&quot; Target=&quot;_blank&quot; /&gt; <br>
+									&lt;asp:TreeNode Text=&quot;Edit Job&quot; NavigateUrl=&quot;~/Edit_Job.aspx&quot; Target=&quot;_blank&quot; /&gt; <br>
+									&lt;asp:TreeNode Text=&quot;View Job&quot; NavigateUrl=&quot;~/View_Job.aspx&quot; Target=&quot;_blank&quot; /&gt; <br>
+								&lt;/asp:TreeNode&gt; <br>
+								&lt;asp:TreeNode Text=&quot;Admin&quot; NavigateUrl=&quot;~/Admin.aspx&quot; Target=&quot;_blank&quot;&gt; <br>
+									&lt;asp:TreeNode Text=&quot;Add User&quot; NavigateUrl=&quot;~/Add_User.aspx&quot; Target=&quot;_blank&quot; /&gt; <br>
+									&lt;asp:TreeNode Text=&quot;Edit User&quot; NavigateUrl=&quot;~/Edit_Use.aspx&quot; Target=&quot;_blank&quot; /&gt; <br>
+									&lt;asp:TreeNode Text=&quot;View User&quot; NavigateUrl=&quot;~/View_User.aspx&quot; Target=&quot;_blank&quot; /&gt; <br>
+								&lt;/asp:TreeNode&gt; <br>
+							&lt;/Nodes&gt; <br>
+						&lt;/asp:TreeView&gt; <br>
+					&lt;/div&gt; <br>
+                    </code>
+                </div> 
+                <br>
+                <p>
+                    
+                </p>
+                <a href="https://www.c-sharpcorner.com/UploadFile/955025/treeview-control-in-Asp-Net/" class="btn btn-secondary btn-sm"
+                    target="_blank"> 參考資料
+                </a>
+                <br>
+                
+            </div>
+        </div>
+
+        <!----------[ASP.NET] 使用 acsx 與 aspx - WebUserControl-------------------------------------------------------------------------------------------->
+        <div class="card" style="margin-top: 50px;">
+            <div class="card-body">
+                <h5>[ASP.NET]</h5>
+                <hr>
+                <h3>使用 acsx 與 aspx - WebUserControl</h3>
+                <hr class="myhr-border-4-darkcyan">
+                <p>
+                    把元件放在 ascx 上，然後在 aspx 裡使用
+                </p>
+                <a href="https://blog.xuite.net/tolarku/blog/48519600-%5BASP.NET%5D+%E4%BD%BF%E7%94%A8+acsx+%E8%88%87+aspx+-+WebUserControl"
+                    class="btn btn-secondary btn-sm" target="_blank">參考資料</a>
+            </div>
+        </div>
+        
+        <!----------[ASP.NET] Windows Form UI凍結沒反應-------------------------------------------------------------------------------------------->
+        <div class="card" style="margin-top: 50px;">
+            <div class="card-body">
+                <h5>[ASP.NET]</h5>
+                <hr>
+                <h3>Windows Form UI凍結沒反應</h3>
+                <hr class="myhr-border-4-darkcyan">
+                <p>
+                    參考 <a href="https://blog.darkthread.net/Files/DKTD-WinFormThreading.pdf"
+                        target="_blank">https://blog.darkthread.net/Files/DKTD-WinFormThreading.pdf</a>
+                </p>
+            </div>
+        </div>
+
+        <!----------[ASP.NET] 如何將專案Visual Studio 2008升級至Visual Studio 2015?-------------------------------------------------------------------------------------------->
+        <div class="card" style="margin-top: 50px;">
+            <div class="card-body">
+                <h5>[ASP.NET]</h5>
+                <hr>
+                <h3>如何將專案Visual Studio 2008升級至Visual Studio 2015?</h3>
+                <hr class="myhr-border-4-darkcyan">
+                <p>
+                    <span class="important"><strong>1.複製xxx.sln,並將原xxx.sln改名為xxx2008.sln</strong></span><br>
+                    <span class="important"><strong>2.修改xxx.sln</strong></span><br>
+                    將<strong>Visual Studio Solution File, Format Version <span
+                            class="my-font-color-red">10.00</span></strong> 改為
+                    <strong>Visual Studio Solution File, Format Version <span
+                            class="my-font-color-red">11.00</span></strong><br>
+                    <span class="important"><strong>3.修改xxx.csproj</strong></span><br>
+                    將<strong>ToolsVersion="<span class="my-font-color-red">3.5</span>"</strong> 改為
+                    <strong>ToolsVersion="<span class="my-font-color-red">4.0</span>"</strong> <br>
+                    <span class="important"><strong>4.修改xxx.csproj</strong></span><br>
+                    將<strong>&lt;ProjectTypeGuids&gt;{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}&lt;/ProjectTypeGuids&gt;</strong>
+                    註解 <br>
+                    <span class="important"><strong>5.新增xxx.Workflow.sln</strong></span><br>
+                </p>
+            </div>
+        </div>
+        
+        <!--------------------------------------------------------------------------------------------------------------->
+    </div>
+    <p></p>
+    <div class="jumbotron text-center" style="margin-bottom:0">
+        <!-- <p>Copyright ©2021 Ray Kuo</p> -->
+        Copyright ©2021 Ray Kuo
+    </div>
+</body>
+</html>

@@ -120,7 +120,10 @@
                     <a class="nav-link" href="#">JavaScript</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">ASP.NET</a>
+                    <a class="nav-link" href="aspnet.html">ASP.NET</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="IIS.html">IIS</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">SQL</a>
@@ -134,30 +137,34 @@
 
     <div class="container" style="margin-top:30px">
         <!--------------------------------------------------------------------------------------------------------------->
-        <!-----------[IIS] IIS 在 64 位元的 Windows 中無法連結 ODBC 的資料來源------------------------------------------------------------------------------------------->
+        <!-----------[Postman] 使用postman时，报错SSL Error: Unable to verify the first certificate------------------------------------------------------------------------------------------->
         <div class="card" style="margin-top: 50px;">
             <div class="card-body">
-                <h5>[IIS]</h5>
+                <h5>[Postman]</h5>
                 <hr>
-                <h3>[Microsoft][ODBC 驅動程式管理員] 找不到資料來源名稱且未指定預設的驅動程式</h3>
+                <h3>使用postman顯示SSL Error: Unable to verify the first certificate</h3>
                 <hr class="myhr-border-4-darkcyan">
-                <p>
-                    1.請先由控制台進入 Internet Information Services(IIS) 管理員。 <br>
-                    2.開啟左手邊[連線]視窗的[應用程式集區]，再按下中間的[DefaultAppPool]，接著按下[動作]視窗的[進階設定]。<br>
-                    3.在[進階設定]的對話方塊中，找到[一般] → [啟用32位元應用程式] →[True]，最後按下[確定]鈕完成設定。<br>
-                </p>
-                <h5>App.Config</h5>
-                <div class="code">
-                    <code class="mycode">
-                        &lt;filter type=&quot;log4net.Filter.LevelRangeFilter&quot;&gt;<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;levelMin value=&quot;ERROR&quot; /&gt;<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;levelMax value=&quot;FATAL&quot; /&gt;<br>
-                        &lt;/filter&gt;
-                    </code>
-                </div> 
+                <h5>Postman SSL Error: Unable to verify the first certificate</h5>
+                <img src="pictures\postman\SSL-Error.PNG" alt="Postman SSL Error">
                 <br>
-                <a href="http://m.blueshop.com.tw/Thread.aspx?tbfumsubcde=BRD201503201208488UA" class="btn btn-secondary btn-sm" target="_blank"> 參考資料1 </a>
-                <a href="http://blog.e-happy.com.tw/iis-iis-odbc-data-source-can-not-link-64-bit-windows-7/" class="btn btn-secondary btn-sm" target="_blank"> 參考資料2 </a>
+                <h5>解決方法</h5>
+                <p>
+                    Fie -> Settings
+                </p>
+                <img src="pictures\postman\SSL-Error-Solved-01.PNG" alt="Postman SSL Error">
+                <p>
+                    將SSL certificate verification 改為 OFF
+                </p>
+                <img src="pictures\postman\SSL-Error-Solved-02.PNG" alt="Postman SSL Error - Solved 02">
+                <p>
+                    重新request,可以看到獲取到資料
+                </p>
+                <img src="pictures\postman\SSL-Error-Solved-03.PNG" alt="Postman SSL Error - Solved 02">
+                <br>
+                <br>
+                <a href="https://blog.csdn.net/weixin_42170236/article/details/119649635" class="btn btn-secondary btn-sm"
+                    target="_blank"> 參考資料
+                </a>
             </div>
         </div>
         <!-----------[log4net]Console如何關閉Debug,只顯示Error,但Log仍要記錄Debug------------------------------------------------------------------------------------------->
@@ -179,58 +186,6 @@
                 <br>
                 <a href="https://www.gushiciku.cn/pl/pWpG/zh-tw" class="btn btn-secondary btn-sm" target="_blank"> 參考資料1 </a>
                 <a href="https://www.itread01.com/content/1548504197.html" class="btn btn-secondary btn-sm" target="_blank"> 參考資料2 </a>
-            </div>
-        </div>
-        <!-----------[ASP.NET - WCF]Turn off the WCF service host in Visual studio------------------------------------------------------------------------------------------->
-        <div class="card" style="margin-top: 50px;">
-            <div class="card-body">
-                <h5>[ASP.NET - WCF]</h5>
-                <hr>
-                <h3>Turn off the WCF service host in Visual studio</h3>
-                <hr class="myhr-border-4-darkcyan">
-                <p>
-                    unchek checkbox "Start WCF Service Host when debugging another project in the same solution" in WCF options in project settings<br>
-                </p>
-                <h5>Where is the Project Settings and WCF Options in VS 2015?</h5>
-                <p>
-                    In the project that reference your IService Class. Right Click on your project -> Properties -> WCF Options -> Check/Uncheck "Start WCF Service Host when debugging another project in the same solution"                        
-                </p>
-                <h5>WCF Options</h5>
-                <img src="pictures\VisualStudio\WCFOption.PNG" alt="WCF Option">
-                <br>
-                <br>
-                <a href="https://stackoverflow.com/questions/5366229/turn-off-the-wcf-service-host-in-visual-studio" class="btn btn-secondary btn-sm"
-                    target="_blank"> 參考資料
-                </a>
-            </div>
-        </div>
-        <!-----------[ASP.NET - Web Application]HTTP Error 403.14 - Forbidden------------------------------------------------------------------------------------------->
-        <div class="card" style="margin-top: 50px;">
-            <div class="card-body">
-                <h5>[ASP.NET - Web Application]</h5>
-                <hr>
-                <h3>HTTP Error 403.14 - Forbidden</h3>
-                <hr class="myhr-border-4-darkcyan">
-                <p>
-                    adding this into your web.config<br>
-                </p>
-                <h5>Web.Config</h5>
-                <div class="code">
-                    <code class="mycode">
-                        &lt;system.webServer&gt;<br>
-                        &nbsp;&nbsp;&lt;directoryBrowse enabled="true"/&gt;
-                        &lt;/system.webServer&gt;
-                    </code>
-                </div> 
-                <br>
-                <p>
-                    
-                </p>
-                <a href="https://stackoverflow.com/questions/42262993/http-error-403-14-forbidden-with-debug-of-asp-net-web-application" class="btn btn-secondary btn-sm"
-                    target="_blank"> 參考資料
-                </a>
-                <br>
-                
             </div>
         </div>
         <!-----------[DBeaver]SQL Editor裡垂直選取------------------------------------------------------------------------------------------->
@@ -261,105 +216,7 @@
                 
             </div>
         </div>
-        <!-- [ASP.NET]增加以下siteMap設定是因為測試Server上的machine.config設定了MySqlSiteMapProvider會導致default.aspx頁面報錯-->
-        <div class="card" style="margin-top: 50px;">
-            <div class="card-body">
-                <h5>[ASP.NET]</h5>
-                <hr>
-                <h3>解決"Unable to connect to any of the specified MySQL hosts."錯誤</h3>
-                <hr class="myhr-border-4-darkcyan">
-                <p>
-                    錯誤發生是因為在頁面(ex:default.aspx)有用到ASP.NET的控件SiteMap,會先去讀取Web.Config裡關於siteMap的設定.
-                    當Web.Config找不到siteMap設定時,會轉往machine.config找siteMap的設定,但machine.config內的MySqlSiteMapProvider設定是無法正常執行,導致報錯.<br><br>
-                    有2個解決方法:<br>
-                    方法1: 註解掉machine.config內關於siteMap的設定<br>
-                    方法2: Web.Config增加siteMap設定,且必須設定defaultProvider,在providers先clear.(如下)
-                </p>
-                <h5>Web.Config</h5>
-                <div class="code">
-                    <code class="mycode">
-                        &lt;siteMap defaultProvider=&quot;PageSiteMap&quot;&gt;<br>
-                        &lt;providers&gt;<br>
-                        &nbsp;&lt;clear/&gt;<br>
-                        &nbsp;&lt;add name=&quot;PageSiteMap&quot; type=&quot;System.Web.XmlSiteMapProvider&quot; siteMapFile=&quot;~/Web.sitemap&quot; /&gt;<br>
-                        &lt;/providers&gt;<br>
-                        &lt;/siteMap&gt;
-                    </code>
-                </div> 
-                <br>
-                <p>
-                    
-                </p>
-                <a href="https://matol.net/Blog/BlogContent/a1dbcee9-e553-4a56-9cf1-dd76c4948f4f" class="btn btn-secondary btn-sm"
-                    target="_blank"> 參考資料
-                </a>
-                <a href="https://stackoverflow.com/questions/46424555/strange-mysqlsitemapprovider-error-although-xmlsitemapprovider-is-being-used" class="btn btn-secondary btn-sm"
-                target="_blank"> 參考資料
-                </a>
-                <a href="https://stackoverflow.com/questions/32944070/asp-net-cannot-find-mysql-host-even-though-im-not-using-mysql" class="btn btn-secondary btn-sm"
-                    target="_blank"> 參考資料
-                </a>
-                <a href="https://stackoverflow.com/questions/38600679/getting-error-unable-to-connect-to-any-of-the-specified-mysql-hosts-in-an-ap" class="btn btn-secondary btn-sm"
-                target="_blank"> 參考資料
-                </a>
-                <a href="https://www.twblogs.net/a/5b8913072b71775d1cdfba2c" class="btn btn-secondary btn-sm"
-                target="_blank"> 參考資料
-                </a>
-                <a href="https://welkingunther.pixnet.net/blog/post/27986900" class="btn btn-secondary btn-sm"
-                target="_blank"> 參考資料
-                </a>
-                <a href="https://dotblogs.com.tw/lolota/2008/04/10/2792" class="btn btn-secondary btn-sm"
-                target="_blank"> 參考資料
-                </a>
-                <br>
-                
-            </div>
-        </div>
-		<!----------[ASP.NET] TreeView Sample --------------------------------------------------------------------------->
-		<div class="card" style="margin-top: 50px;">
-            <div class="card-body">
-                <h5>[ASP.NET]</h5>
-                <hr>
-                <h3>TreeView Sample</h3>
-                <hr class="myhr-border-4-darkcyan">
-                
-                <div class="code">
-                    <code class="mycode">
-                    &lt;div&gt; <br>
-					&lt;asp:TreeView ID=&quot;TreeView1&quot; runat=&quot;server&quot;&gt; <br>
-					 		&lt;Nodes&gt; <br>
-					 			&lt;asp:TreeNode Text=&quot;Home&quot; NavigateUrl=&quot;~/Home.aspx&quot; Target=&quot;_blank&quot; /&gt; <br>
-								&lt;asp:TreeNode Text=&quot;Employee&quot; NavigateUrl=&quot;~/Employee.aspx&quot; Target=&quot;_blank&quot; /&gt; <br>
-								&lt;asp:TreeNode Text=&quot;Upload Resume&quot; NavigateUrl=&quot;~/Upload_Resume.aspx&quot; Target=&quot;_blank&quot; /&gt; <br>
-								&lt;asp:TreeNode Text=&quot;Edit Resume&quot; NavigateUrl=&quot;~/Edit_Resume.aspx&quot; Target=&quot;_blank&quot; /&gt; <br>
-								&lt;asp:TreeNode Text=&quot;View Resume&quot; NavigateUrl=&quot;~/View_Resume.aspx&quot; Target=&quot;_blank&quot; /&gt; <br>
-								&lt;asp:TreeNode Text=&quot;Employer&quot; NavigateUrl=&quot;~/Employer.aspx&quot; Target=&quot;_blank&quot;&gt; <br>
-									&lt;asp:TreeNode Text=&quot;Upload Job&quot; NavigateUrl=&quot;~/Upload_Job.aspx&quot; Target=&quot;_blank&quot; /&gt; <br>
-									&lt;asp:TreeNode Text=&quot;Edit Job&quot; NavigateUrl=&quot;~/Edit_Job.aspx&quot; Target=&quot;_blank&quot; /&gt; <br>
-									&lt;asp:TreeNode Text=&quot;View Job&quot; NavigateUrl=&quot;~/View_Job.aspx&quot; Target=&quot;_blank&quot; /&gt; <br>
-								&lt;/asp:TreeNode&gt; <br>
-								&lt;asp:TreeNode Text=&quot;Admin&quot; NavigateUrl=&quot;~/Admin.aspx&quot; Target=&quot;_blank&quot;&gt; <br>
-									&lt;asp:TreeNode Text=&quot;Add User&quot; NavigateUrl=&quot;~/Add_User.aspx&quot; Target=&quot;_blank&quot; /&gt; <br>
-									&lt;asp:TreeNode Text=&quot;Edit User&quot; NavigateUrl=&quot;~/Edit_Use.aspx&quot; Target=&quot;_blank&quot; /&gt; <br>
-									&lt;asp:TreeNode Text=&quot;View User&quot; NavigateUrl=&quot;~/View_User.aspx&quot; Target=&quot;_blank&quot; /&gt; <br>
-								&lt;/asp:TreeNode&gt; <br>
-							&lt;/Nodes&gt; <br>
-						&lt;/asp:TreeView&gt; <br>
-					&lt;/div&gt; <br>
-                    </code>
-                </div> 
-                <br>
-                <p>
-                    
-                </p>
-                <a href="https://www.c-sharpcorner.com/UploadFile/955025/treeview-control-in-Asp-Net/" class="btn btn-secondary btn-sm"
-                    target="_blank"> 參考資料
-                </a>
-                <br>
-                
-            </div>
-        </div>
-        <!----------[Antix Linux] 如何更換國內源 How To Change The Repository in AntiX?----------------------------------------------------------------------------------------------------->
+        <!-----------[Antix Linux] 如何更換國內源 How To Change The Repository in AntiX?----------------------------------------------------------------------------------------------------->
         <div class="card" style="margin-top: 50px;">
             <div class="card-body">
                 <h5>[Antix Linux]</h5>
@@ -405,7 +262,7 @@
                 </a>
             </div>
         </div>
-        <!----------[Visual Studio Code] visual  studio code 自動保存----------------------------------------------------------------------------------------------------->
+        <!-----------[Visual Studio Code] visual  studio code 自動保存--------------------------------------------------------------------------->
         <div class="card" style="margin-top: 50px;">
             <div class="card-body">
                 <h5>[Visual Studio Code]</h5>
@@ -421,7 +278,7 @@
                 </a>
             </div>
         </div>
-        <!---------------[Computer] 線上中文輸入法------------------------------------------------------------------------------------------------>
+        <!-----------[Computer] 線上中文輸入法------------------------------------------------------------------------------------------------>
         <div class="card" style="margin-top: 50px;">
             <div class="card-body">
                 <h5>[Computer]</h5>
@@ -443,7 +300,7 @@
                 </a>
             </div>
         </div>
-        <!-------------------[Antix Linux] -19.2 中文输入法-------------------------------------------------------------------------------------------->
+        <!-----------[Antix Linux] -19.2 中文输入法-------------------------------------------------------------------------------------------->
         <div class="card" style="margin-top: 50px;">
             <div class="card-body">
                 <h5>[Antix Linux]</h5>
@@ -485,7 +342,7 @@
                     target="_blank">參考資料 2</a>
             </div>
         </div>
-        <!---------------------[GitHub] git push error------------------------------------------------------------------------------------------>
+        <!-----------[GitHub] git push error------------------------------------------------------------------------------------------>
         <div class="card" style="margin-top: 50px;">
             <div class="card-body">
                 <h5>[GitHub]</h5>
@@ -512,7 +369,7 @@
                     target="_blank">參考資料</a>
             </div>
         </div>
-        <!------------------[debian] 安裝 .deb 檔案--------------------------------------------------------------------------------------------->
+        <!-----------[debian] 安裝 .deb 檔案--------------------------------------------------------------------------------------------->
         <div class="card" style="margin-top: 50px;">
             <div class="card-body">
                 <h5>[debian]</h5>
@@ -541,7 +398,7 @@
                     target="_blank">參考資料</a>
             </div>
         </div>
-        <!--------------------------------------------------------------------------------------------------------------->
+        <!-----------[WSL] 如何查看當前debian的版本------------------------------------------------------------------------------------------------------>
         <div class="card" style="margin-top: 50px;">
             <div class="card-body">
                 <h5>[WSL]</h5>
@@ -571,7 +428,7 @@
                     target="_blank">參考資料</a>
             </div>
         </div>
-        <!--------------------------------------------------------------------------------------------------------------->
+        <!-----------[visual studio 2022] 修改Visual Studio預設的語言(Language)------------------------------------------------------------------------------------------------------>
         <div class="card" style="margin-top: 50px;">
             <div class="card-body">
                 <h5>[visual studio 2022]</h5>
@@ -592,7 +449,7 @@
                     class="btn btn-secondary btn-sm" target="_blank">參考資料</a>
             </div>
         </div>
-        <!--------------------------------------------------------------------------------------------------------------->
+        <!-----------[vue] CREATING A DATA TABLE IN VUE.JS------------------------------------------------------------------------------------------------------>
         <div class="card" style="margin-top: 50px;">
             <div class="card-body">
                 <h5>[vue]</h5>
@@ -624,7 +481,7 @@
                     class="btn btn-secondary btn-sm" target="_blank">參考資料</a>
             </div>
         </div>
-        <!--------------------------------------------------------------------------------------------------------------->
+        <!-----------[USB Disk] 隨身碟做成開機隨身碟後容量變小,如何恢復?------------------------------------------------------------------------------------------------------>
         <div class="card" style="margin-top: 50px;">
             <div class="card-body">
                 <h5>[USB Disk]</h5>
@@ -682,7 +539,7 @@
                     target="_blank">參考資料</a>
             </div>
         </div>
-        <!--------------------------------------------------------------------------------------------------------------->
+        <!-----------[git bash] 解決git bash下的vim螢幕會閃一下(例如:按ESC時)------------------------------------------------------------------------------------------------------>
         <div class="card" style="margin-top: 50px;">
             <div class="card-body">
                 <h5>[git bash]</h5>
@@ -703,7 +560,7 @@
                     target="_blank">參考資料</a>
             </div>
         </div>
-        <!--------------------------------------------------------------------------------------------------------------->
+        <!-----------[git bash] windows terminal + git bash 使用 del鍵 畫面會閃爍------------------------------------------------------------------------------------------------------>
         <div class="card" style="margin-top: 50px;">
             <div class="card-body">
                 <h5>[git bash]</h5>
@@ -725,7 +582,7 @@
                     class="btn btn-secondary btn-sm" target="_blank">參考資料</a>
             </div>
         </div>
-        <!--------------------------------------------------------------------------------------------------------------->
+        <!-----------[git bash] git diff差異如何以左右方式顯示------------------------------------------------------------------------------------------------------>
         <div class="card" style="margin-top: 50px;">
             <div class="card-body">
                 <h5>[git bash]</h5>
@@ -745,7 +602,7 @@
                     class="btn btn-secondary btn-sm" target="_blank">參考資料</a>
             </div>
         </div>
-        <!--------------------------------------------------------------------------------------------------------------->
+        <!-----------[HTML] How to change the default value for select element and checkbox in HTML------------------------------------------------------------------------------------------------------>
         <div class="card" style="margin-top: 50px;">
             <div class="card-body">
                 <h5>[HTML]</h5>
@@ -775,7 +632,7 @@
                     class="btn btn-secondary btn-sm" target="_blank">參考資料2</a>
             </div>
         </div>
-        <!--------------------------------------------------------------------------------------------------------------->
+        <!-----------[git] 如何將程式碼恢復成原來的(類似svn的revert功能)------------------------------------------------------------------------------------------------------>
         <div class="card" style="margin-top: 50px;">
             <div class="card-body">
                 <h5>[git]</h5>
@@ -790,7 +647,7 @@
                 <br>
             </div>
         </div>
-        <!--------------------------------------------------------------------------------------------------------------->
+        <!-----------[Barcode] UPC-A條碼開頭4條線還是2條線? 一樣不一樣?------------------------------------------------------------------------------------------------------>
         <div class="card" style="margin-top: 50px;">
             <div class="card-body">
                 <h5>[Barcode]</h5>
@@ -829,21 +686,7 @@
                 <br>
             </div>
         </div>
-        <!--------------------------------------------------------------------------------------------------------------->
-        <div class="card" style="margin-top: 50px;">
-            <div class="card-body">
-                <h5>[ASP.NET]</h5>
-                <hr>
-                <h3>使用 acsx 與 aspx - WebUserControl</h3>
-                <hr class="myhr-border-4-darkcyan">
-                <p>
-                    把元件放在 ascx 上，然後在 aspx 裡使用
-                </p>
-                <a href="https://blog.xuite.net/tolarku/blog/48519600-%5BASP.NET%5D+%E4%BD%BF%E7%94%A8+acsx+%E8%88%87+aspx+-+WebUserControl"
-                    class="btn btn-secondary btn-sm" target="_blank">參考資料</a>
-            </div>
-        </div>
-        <!--------------------------------------------------------------------------------------------------------------->
+        <!-----------[HTML] How to display &amp;nbsp; in HTML------------------------------------------------------------------------------------------------------>
         <div class="card" style="margin-top: 50px;">
             <div class="card-body">
                 <h5>[HTML]</h5>
@@ -857,7 +700,7 @@
                     class="btn btn-secondary btn-sm" target="_blank">參考資料</a>
             </div>
         </div>
-        <!--------------------------------------------------------------------------------------------------------------->
+        <!-----------[HTML] How to add space in HTML------------------------------------------------------------------------------------------------------>
         <div class="card" style="margin-top: 50px;">
             <div class="card-body">
                 <h5>[HTML]</h5>
@@ -871,7 +714,7 @@
                     class="btn btn-secondary btn-sm" target="_blank">參考資料</a>
             </div>
         </div>
-        <!--------------------------------------------------------------------------------------------------------------->
+        <!-----------[HTML] How to display HTML tags as plain text------------------------------------------------------------------------------------------------------>
         <div class="card" style="margin-top: 50px;">
             <div class="card-body">
                 <h5>[HTML]</h5>
@@ -887,7 +730,7 @@
                     class="btn btn-secondary btn-sm" target="_blank">參考資料</a>
             </div>
         </div>
-        <!--------------------------------------------------------------------------------------------------------------->
+        <!-----------[HTML] a href如何開啟新頁------------------------------------------------------------------------------------------------------>
         <div class="card" style="margin-top: 50px;">
             <div class="card-body">
                 <h5>[HTML]</h5>
@@ -899,7 +742,7 @@
                 </p>
             </div>
         </div>
-        <!--------------------------------------------------------------------------------------------------------------->
+        <!-----------[Windows] 檔名NUL無法刪除------------------------------------------------------------------------------------------------------>
         <div class="card" style="margin-top: 50px;">
             <div class="card-body">
                 <h5>[Windows]</h5>
@@ -918,45 +761,7 @@
                 </div>
             </div>
         </div>
-        <!--------------------------------------------------------------------------------------------------------------->
-        <div class="card" style="margin-top: 50px;">
-            <div class="card-body">
-                <h5>[ASP.NET]</h5>
-                <hr>
-                <h3>Windows Form UI凍結沒反應</h3>
-                <hr class="myhr-border-4-darkcyan">
-                <p>
-                    參考 <a href="https://blog.darkthread.net/Files/DKTD-WinFormThreading.pdf"
-                        target="_blank">https://blog.darkthread.net/Files/DKTD-WinFormThreading.pdf</a>
-                </p>
-            </div>
-        </div>
-
-        <!--------------------------------------------------------------------------------------------------------------->
-        <div class="card" style="margin-top: 50px;">
-            <div class="card-body">
-                <h5>[ASP.NET]</h5>
-                <hr>
-                <h3>如何將專案Visual Studio 2008升級至Visual Studio 2015?</h3>
-                <hr class="myhr-border-4-darkcyan">
-                <p>
-                    <span class="important"><strong>1.複製xxx.sln,並將原xxx.sln改名為xxx2008.sln</strong></span><br>
-                    <span class="important"><strong>2.修改xxx.sln</strong></span><br>
-                    將<strong>Visual Studio Solution File, Format Version <span
-                            class="my-font-color-red">10.00</span></strong> 改為
-                    <strong>Visual Studio Solution File, Format Version <span
-                            class="my-font-color-red">11.00</span></strong><br>
-                    <span class="important"><strong>3.修改xxx.csproj</strong></span><br>
-                    將<strong>ToolsVersion="<span class="my-font-color-red">3.5</span>"</strong> 改為
-                    <strong>ToolsVersion="<span class="my-font-color-red">4.0</span>"</strong> <br>
-                    <span class="important"><strong>4.修改xxx.csproj</strong></span><br>
-                    將<strong>&lt;ProjectTypeGuids&gt;{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}&lt;/ProjectTypeGuids&gt;</strong>
-                    註解 <br>
-                    <span class="important"><strong>5.新增xxx.Workflow.sln</strong></span><br>
-                </p>
-            </div>
-        </div>
-        <!--------------------------------------------------------------------------------------------------------------->
+        <!-----------[Visual Studio Code] 如何在Visual Studio Code自動排版CSS?------------------------------------------------------------------------------------------------------>
         <div class="card" style="margin-top: 50px;">
             <div class="card-body">
                 <h5>[Visual Studio Code]</h5>
@@ -971,7 +776,7 @@
                 </p>
             </div>
         </div>
-        <!--------------------------------------------------------------------------------------------------------------->
+        <!-----------[Visual Studio Code] 如何在Visual Studio Code預覽HTML?------------------------------------------------------------------------------------------------------>
         <div class="card" style="margin-top: 50px;">
             <div class="card-body">
                 <h5>[Visual Studio Code]</h5>
@@ -984,7 +789,7 @@
                 </p>
             </div>
         </div>
-        <!--------------------------------------------------------------------------------------------------------------->
+        <!-----------[Visual Studio 2015] 如何在Visual Studio內使if else等程式碼摺疊?------------------------------------------------------------------------------------------------------>
         <div class="card" style="margin-top: 50px;">
             <div class="card-body">
                 <h5>[Visual Studio 2015]</h5>
