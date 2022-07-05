@@ -137,6 +137,32 @@
 
     <div class="container" style="margin-top:30px">
         <!--------------------------------------------------------------------------------------------------------------->
+        <!-----------[ASP.NET - ScriptManager] ScriptManager.AsyncPostBackTimeout-------------------------------------------------->
+        <div class="card" style="margin-top: 50px;">
+            <div class="card-body">
+                <h5>[ASP.NET - ScriptManager]</h5>
+                <hr>
+                <h3>用戶反應查詢功能查了1個多小時,查不出資料,畫面一直停留在轉圈</h3>
+                <hr class="myhr-border-4-darkcyan">
+                <p>
+                    我第一時間以為是進入死循環,導致查不出來.後來debug發現沒有發生死循環,只是後台查詢完,綁定完DataTable返回前台沒有反應.<br>
+                    之前發生過類似的情形,但忘記是要改哪裡,找了好久.是因為頁面使用ScriptManager,超過預設的90秒之後,就會發生timeout.此時要返回前台都無效.<br>
+                    可以在xxx.aspx使用ScriptManager的地方加上AsyncPostBackTimeout="5000",之後就可以正常顯示.<br>
+                </p>
+                <div class="code">
+                    <code class="mycode">
+                        &lt;asp:ScriptManager ID="ScriptManager1" runat="server" <span class="my-font-color-red">AsyncPostBackTimeout</span>="6000"&gt;&lt;/asp:ScriptManager&gt;
+                    </code>
+                </div> 
+                <br>
+                <br>
+                <a href="https://kylesheng.blogspot.com/2016/07/scriptmanagerasyncpostbacktimeout.html" class="btn btn-secondary btn-sm"
+                    target="_blank"> 參考資料
+                </a>
+            </div>
+        </div>
+
+        <!--------------------------------------------------------------------------------------------------------------->
         <!-----------[ASP.NET - WCF]Turn off the WCF service host in Visual studio------------------------------------------------------------------------------------------->
         <div class="card" style="margin-top: 50px;">
             <div class="card-body">
